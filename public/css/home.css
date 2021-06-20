@@ -1,0 +1,219 @@
+section#part-1
+{
+    position: relative;
+    height: 100vh;
+    width: calc(100vw - 200px);
+    background-color: #0d8774;
+    background: rgb(13,135,116);
+    background: linear-gradient(180deg, rgba(13,135,116,1) 75%, rgba(10,154,182,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+section#part-1 img#people {
+    height: 25vw;
+    z-index: 100;
+}
+
+section#part-1 img#portfolio {
+    height: 27.5vw;
+    z-index: 100;
+}
+
+section#part-1 img.cloud {
+    position: absolute;
+    height: 10vh;
+    top: 30vh;
+    left: 0;
+    opacity: 0;
+    animation: cloud 20s infinite ease-in-out;
+}
+
+section#part-1 img#cloud2 {
+    animation: cloud 20s infinite ease-in-out 5s;
+    top: 45vh;
+}
+
+section#part-1 img#cloud3 {
+    animation: cloud 20s infinite ease-in-out 10s;
+    top: 40vh;
+}
+
+section#part-1 img#cloud4 {
+    animation: cloud 20s infinite ease-in-out 15s;
+    top: 35vh;
+}
+
+@keyframes cloud {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: .8;
+    }
+    100% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+}
+
+section#part-1 div.portfolio {
+    position: relative;
+}
+
+section#part-1 div.portfolio a {
+    position: absolute;
+    top: 23%;
+    right: 7%;
+    padding: 10px 20px;
+    border: 2px solid #F8AC41;
+    border-radius: 5px;
+    color: #F8AC41;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    font-size: .8rem;
+    transition: .3s all;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+section#part-1 div.portfolio a:hover {
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+section  div.title {
+    position: absolute;
+    top: 60vh;
+    left: calc(25vw + 100px);
+}
+
+section  div.title h1 {
+    white-space: pre-line;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffff;
+    font-size: 2rem;
+}
+
+section  div.title span {
+    color: #F8AC41;
+    font-size: 3rem;
+}
+
+@media (max-width: 1400px) {
+    section#part-1 img#portfolio {
+        height: 30vw;
+    }
+    section  div.title h1 {
+        font-size: 1.6rem;
+    }
+    section  div.title span {
+        font-size: 2.4rem;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    section  div.title h1 {
+        font-size: 2.2rem;
+    }
+    section  div.title span {
+        font-size: 3rem;
+    }
+    section#part-1
+    {
+        padding-top: 150px;
+        min-height: calc(100vh - 150px);
+        height: auto;
+        width: calc(100vw - 200px);
+        background-color: #0d8774;
+        background: rgb(13,135,116);
+        background: linear-gradient(180deg, rgba(13,135,116,1) 75%, rgba(10,154,182,1) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    section#part-1 img#people {
+        height: 40vw;
+        z-index: 100;
+    }
+    section#part-1 div.portfolio {
+        align-self: flex-end;
+    }
+    section#part-1 img#portfolio {
+        width: 65vw;
+        height: auto;
+    }
+    section  div.title {
+        position: absolute;
+        top: 40vh;
+        left: calc(40vw + 100px);
+    }
+}
+
+@media (max-width: 1000px) {
+    section  div.title h1 {
+        font-size: 1.6rem;
+    }
+    section  div.title span {
+        font-size: 2.4rem;
+    }
+    section  div.title {
+        top: 30vh;
+    }
+}
+
+@media (max-width: 767px) {
+    section#part-1
+    {
+        width: 100vw;
+        padding: 0 0;
+        align-items: center;
+        min-height: 100vh !important;
+        height: 100vh !important;
+        position: relative;
+        justify-content: center;
+    }
+    section#part-1 div.portfolio {
+        align-self: center;
+        order: 3;
+        margin-top: 50px;
+    }
+    section#part-1 img#portfolio {
+        display: none;
+    }
+    section#part-1 img#people {
+        height: 75vw;
+        order: 1;
+    }
+    section div.title {
+        position: relative;
+        order: 2;
+        top: auto;
+        left: auto;
+    }
+    section#part-1 div.portfolio a {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+    section#part-1 img.cloud {
+        top: 20vh;
+    }
+    section#part-1 img#cloud2 {
+        top: 35vh;
+    }
+    section#part-1 img#cloud3 {
+        top: 30vh;
+    }
+    section#part-1 img#cloud4 {
+        top: 25vh;
+    }
+}
