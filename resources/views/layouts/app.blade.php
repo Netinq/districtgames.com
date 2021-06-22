@@ -1,4 +1,4 @@
-@section('description', "TODO")
+@section('description', "Illustrez votre jeu, créez un univers à travers une nouvelle une charte graphique unique et moderne.")
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -17,7 +17,7 @@
 
         <meta name='language' content='FR'>
         <meta name='target' content='all'>
-        <meta name='theme-color' content='#C23335'>
+        <meta name='theme-color' content='#0d8774'>
 
         <link rel='shortcut icon' type='image/png' href='{{ asset('img/icon.png') }}'>
         <link rel="apple-touch-icon" href="{{ asset('img/icon.png') }}" />
