@@ -24,14 +24,14 @@
 
         <!-- Twitter Card meta -->
         <meta name='twitter:card' content='summary'>
-        <meta name="twitter:title" content="District Games" />
+        <meta name="twitter:title" content="@hasSection('title') @yield('title') @else Bienvenue chez DistrictGames @endif" />
         <meta name='twitter:url' content='https://districtgames.com' />
         <meta name='twitter:domain' content='districtgames.com' />
         <meta name="twitter:description" content="@yield('description')" />
         <meta name="twitter:image" content="{{asset('img/meta.png')}}" />
 
         <!-- Open Graph meta -->
-        <meta property='og:title' content='District Games' />
+        <meta property='og:title' content='@hasSection('title') @yield('title') @else Bienvenue chez DistrictGames @endif' />
         <meta property="og:description" content="@yield('description')" />
         <meta property="og:image" content="{{asset('img/meta.png')}}" />
         <meta property='og:type' content='website' />
