@@ -2,14 +2,23 @@ section#part-1
 {
     position: relative;
     height: 100vh;
-    width: calc(100vw - 200px);
+    width: 100vw;
     background-color: #0d8774;
     background: rgb(13,135,116);
-    background: linear-gradient(180deg, rgba(13,135,116,1) 75%, rgba(10,154,182,1) 100%);
+    background: linear-gradient(180deg, rgba(13,135,116,1) 25%, rgba(10,154,182,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+section#part-1 div.flex
+{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 100vh;
+    width: calc(100vw - 200px);
     padding: 0 100px;
 }
 
@@ -131,14 +140,18 @@ section  div.title span {
         padding-top: 150px;
         min-height: calc(100vh - 150px);
         height: auto;
-        width: calc(100vw - 200px);
         background-color: #0d8774;
         background: rgb(13,135,116);
         background: linear-gradient(180deg, rgba(13,135,116,1) 75%, rgba(10,154,182,1) 100%);
+    }
+    section#part-1 div.flex
+    {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+        height: auto;
+        width: calc(100vw - 200px);
     }
     section#part-1 img#people {
         height: 40vw;
@@ -180,6 +193,7 @@ section  div.title span {
         height: 100vh !important;
         position: relative;
         justify-content: center;
+        overflow-y: hidden;
     }
     section#part-1 div.portfolio {
         align-self: center;
@@ -216,4 +230,36 @@ section  div.title span {
     section#part-1 img#cloud4 {
         top: 25vh;
     }
+}
+
+/* ------------------ */
+/*                    */
+/*       PART 2       */
+/*                    */
+/* ------------------ */
+
+section#part-2
+{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#part-2 img#haut {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    animation: translate-bottom-show 1s ease-out;
+}
+
+section#part-2 img#ds-txt {
+    width: 50vw;
+    animation: translate-bottom 1s ease-out;
 }
