@@ -429,3 +429,4 @@ section#part-3 div.ctn div.p3ca-ctn p {
 }
 @media (max-width: 600px) {section#part-3 div.ctn div.p3ca-ctn p {font-size: 1rem;}}
 @media (max-width: 500px) {section#part-3 div.ctn div.p3ca-ctn p {font-size: .8rem;}}
+@media (max-width: 400px) {section#part-3 div.ctn div.p3ca-ctn p {font-size: .7rem;}}
