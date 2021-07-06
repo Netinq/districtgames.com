@@ -371,6 +371,7 @@ section#part-3 img#p3snow
     left: 0;
     bottom: 0;
     transform: translateY(60%);
+    z-index: 101;
 }
 @media (max-width: 908px) {section#part-3 div.ctn img#p3snow{transform: translateY(55%)}}
 @media (max-width: 470px) {section#part-3 div.ctn img#p3snow{transform: translateY(50%)}}
@@ -396,11 +397,11 @@ section#part-3 div.ctn div.p3ca-ctn p {
     justify-content: center;
     align-items: center;
     color: #ffff;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
-@media (max-width: 1300px) {section#part-3 div.ctn img{height: 40vh;}section#part-3 div.ctn div.p3ca-ctn p {font-size: 1.2rem;}}
-@media (max-width: 1200px) {section#part-3 div.ctn img{height: 30vh;}section#part-3 div.ctn div.p3ca-ctn p {font-size: .9rem;}}
+@media (max-width: 1300px) {section#part-3 div.ctn img{height: 40vh;}section#part-3 div.ctn div.p3ca-ctn p {font-size: 1rem;}}
+@media (max-width: 1200px) {section#part-3 div.ctn img{height: 30vh;}section#part-3 div.ctn div.p3ca-ctn p {font-size: .8rem;}}
 @media (max-width: 787px) {
     section#part-3 div.ctn
     {
@@ -430,3 +431,23 @@ section#part-3 div.ctn div.p3ca-ctn p {
 @media (max-width: 600px) {section#part-3 div.ctn div.p3ca-ctn p {font-size: 1rem;}}
 @media (max-width: 500px) {section#part-3 div.ctn div.p3ca-ctn p {font-size: .8rem;}}
 @media (max-width: 400px) {section#part-3 div.ctn div.p3ca-ctn p {font-size: .7rem;}}
+
+section#part-4
+{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section#part-4 div.title-ctn {
+    z-index: 100;
+    height: 50vh;
+    width: 100vw;
+    background: rgb(23,7,51);
+    background: linear-gradient(180deg, rgba(23,7,51,1) 50%, rgba(50,7,40,1) 100%);
+}

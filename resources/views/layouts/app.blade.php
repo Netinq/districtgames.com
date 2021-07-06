@@ -28,12 +28,12 @@
         <meta name='twitter:url' content='https://districtgames.com' />
         <meta name='twitter:domain' content='districtgames.com' />
         <meta name="twitter:description" content="@yield('description')" />
-        <meta name="twitter:image" content="{{asset('img/meta.png')}}" />
+        <meta name="twitter:image" content="{{asset('img/meta.jpg')}}" />
 
         <!-- Open Graph meta -->
         <meta property='og:title' content='@hasSection('title') @yield('title') @else Bienvenue chez DistrictGames @endif' />
         <meta property="og:description" content="@yield('description')" />
-        <meta property="og:image" content="{{asset('img/meta.png')}}" />
+        <meta property="og:image" content="{{asset('img/meta.jpg')}}" />
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https://bst-fibre.com' />
         <meta property='og:site_name' content='{{Config::get('app.name')}}' />
@@ -50,7 +50,7 @@
                 "name": "District Games",
                 "legalName": "District Games",
                 "description": "TODO",
-                "image": "https://districtgames.com/img/meta.png",
+                "image": "https://districtgames.com/img/meta.jpg",
                 "logo": "https://districtgames.com/img/logo.png",
                 "url": "https://districtgames.com",
                 "email": "districtcorp.private@gmail.com"
