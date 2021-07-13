@@ -450,4 +450,93 @@ section#part-4 div.title-ctn {
     width: 100vw;
     background: rgb(23,7,51);
     background: linear-gradient(180deg, rgba(23,7,51,1) 50%, rgba(50,7,40,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+section#part-4 div.title-ctn h3 {
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    white-space: pre-line;
+    text-align: center;
+}
+
+
+section#part-4 div.title-ctn h3 span {
+    color: #F8AC41;
+    font-size: 3rem;
+}
+
+section#part-4 div.partner-ctn {
+    z-index: 100;
+    height: 50vh;
+    width: 100vw;
+    background: rgba(50,7,40,1);
+}
+
+section#part-4 div.partner-ctn img#cave {
+    position: absolute;
+    width: 100vw;
+    bottom: -20vw;
+    left: 0;
+}
+
+section#part-4 div.partner-ctn div.carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 25vh;
+    margin-top: 25vh;
+    position: relative;
+    padding: 0 100px;
+    overflow-x: hidden;
+}
+@media (max-width: 1200px) {
+    section#part-4 div.partner-ctn img#cave {
+        position: absolute;
+        width: auto;
+        height: 75vh;
+        bottom: -20vw;
+        left: 0;
+    }
+    section#part-4 div.partner-ctn {
+        overflow-x: hidden;
+    }
+    section#part-4 div.partner-ctn div.carousel {
+        margin-top: 15vh;
+    }
+}
+@media (max-width: 767px) {
+    section#part-4 div.partner-ctn div.carousel {
+        margin-top: 10vh;
+    }
+}
+section#part-4 div.partner-ctn div.carousel div.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+section#part-4 div.partner-ctn div.carousel div.box {
+    margin-right: 50px;
+}
+section#part-4 div.partner-ctn div.carousel div.box img {
+    height: 70%;
+}
+section#part-4 div.partner-ctn div.carousel div.box p {
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+}
+section#part-4 div.partner-ctn div.carousel div.box p span {
+    color: #F8AC41;
+    font-weight: bold;
+    font-size: 1rem;
 }
