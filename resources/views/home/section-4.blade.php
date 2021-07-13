@@ -52,7 +52,7 @@
                 <p><span>+1,4K</span> Players</p>
             </div>
             <div class="box">
-                <img class="icon" src="{{ asset('img/home/part-4/carousel/10.png')}}" alt="">
+                <img class="icon" src="{{ asset('img/home/part-4/carousel/12.png')}}" alt="">
                 <p><span>+2500</span> Players</p>
             </div>
         </div>
