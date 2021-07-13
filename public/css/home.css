@@ -10,7 +10,7 @@ section#part-1
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 section#part-1 div.flex
 {
@@ -443,7 +443,7 @@ section#part-4
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 section#part-4 div.title-ctn {
