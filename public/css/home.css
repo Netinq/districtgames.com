@@ -512,9 +512,23 @@ section#part-4 div.partner-ctn div.carousel {
         margin-top: 15vh;
     }
 }
+@media (max-width: 908px) {
+    section#part-4 div.partner-ctn img#cave {
+        position: absolute;
+        width: auto;
+        height: 75vh;
+        bottom: -40vw;
+        left: 0;
+        z-index: 100;
+    }
+    section#part-4 div.partner-ctn div.carousel {
+        margin-top: 25vh;
+        z-index: 1000;
+    }
+}
 @media (max-width: 767px) {
     section#part-4 div.partner-ctn div.carousel {
-        margin-top: 10vh;
+        margin-top: 20vh;
     }
 }
 section#part-4 div.partner-ctn div.carousel div.box {
@@ -539,4 +553,33 @@ section#part-4 div.partner-ctn div.carousel div.box p span {
     color: #F8AC41;
     font-weight: bold;
     font-size: 1rem;
+}
+
+section#part-5
+{
+    position: relative;
+    height: 75vh;
+    width: 100vw;
+    background-color: #0C0007;
+}
+
+section#part-6
+{
+    position: relative;
+    height: auto;
+    width: 100vw;
+}
+
+section#part-6 img#cavelava
+{
+    width: 100vw;
+}
+
+section#part-6 img#cristal
+{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    transform: translateY(65%);
+    width: 100vw;
 }
