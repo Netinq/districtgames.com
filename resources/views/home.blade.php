@@ -13,4 +13,5 @@
 <script src="{{ asset('js/haut.js')}}"></script>
 <script src="{{ asset('js/carousel.js')}}"></script>
 <script src="{{ asset('js/scroll.js')}}"></script>
+<script src="{{ asset('js/round.js')}}"></script>
 @endsection

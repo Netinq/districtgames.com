@@ -1,6 +1,6 @@
 <section id="part-4">
     <div class="title-ctn">
-        <h3>Ils nous font
+        <h3 id="p4h3" class="hide">Ils nous font
             <span>confiance</span>
         </h3>
     </div>

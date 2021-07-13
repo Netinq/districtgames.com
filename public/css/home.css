@@ -464,6 +464,7 @@ section#part-4 div.title-ctn h3 {
     font-size: 2rem;
     white-space: pre-line;
     text-align: center;
+    animation: translate-bottom 1s;
 }
 
 
@@ -561,6 +562,96 @@ section#part-5
     height: 75vh;
     width: 100vw;
     background-color: #0C0007;
+}
+
+section#part-5 img
+{
+    height: 200px;
+    animation: translate-left 1s;
+}
+
+section#part-5 div.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    width: calc(100vw - 200px);
+    padding: 20% 100px;
+}
+@media (max-width: 908px) {
+    section#part-5
+    {
+        height: 100vh;
+    }
+    section#part-5 div.content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 45% 100px;
+    }
+}
+
+section#part-5 div.content div.rounds {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#part-5 div.content div.rounds .progress {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    margin: -80px 0 0 -80px;
+}
+section#part-5 div.content div.round{
+    position: relative;
+}
+
+section#part-5 div.content div.round div.txt{
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 20px);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+section#part-5 div.content div.round div.txt p {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+    font-weight: bold;
+    margin: 0;
+}
+section#part-5 div.content div.round div.txt span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-weight: bold;
+}
+
+section#part-5 div.content div.rounds .circle {
+  transform: rotate(-90deg);
+	margin-top: -40px;
+}
+section#part-5 div.content div.rounds .circle-back {
+	fill: none;
+	stroke: #361014;
+	stroke-width:10px;
+}
+section#part-5 div.content div.rounds .circle-prog {
+	fill: none;
+	stroke-width: 10px;
+	stroke-dasharray: 0 999;
+	stroke-dashoffset: 0px;
+   transition: stroke-dasharray 0.7s linear 0s;
 }
 
 section#part-6
