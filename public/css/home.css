@@ -635,7 +635,7 @@ section#part-5 div.content div.rounds .circle-prog {
 	stroke-width: 10px;
 	stroke-dasharray: 0 999;
 	stroke-dashoffset: 0px;
-   transition: stroke-dasharray 0.7s linear 0s;
+    transition: stroke-dasharray 1s linear 0s;
 }
 @media (max-width: 908px) {
     section#part-5
