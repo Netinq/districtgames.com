@@ -1,0 +1,10 @@
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="184.15mm" height="297mm" viewBox="0 0 522 841.89">
+  <defs>
+    <linearGradient id="Dégradé_sans_nom_7" data-name="Dégradé sans nom 7" x1="298.33" y1="841.89" x2="298.33" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#42cbf9"/>
+      <stop offset="1" stop-color="#85f2ff"/>
+    </linearGradient>
+  </defs>
+  <title>storm_icon</title>
+  <path d="M57.31,526.39c-14.91,2.59-25.52-14.1-16.86-26.5L394.15,7.18c10-14,32.06-6,30.81,11.11l-45.63,355.6,159.61-35.65c15-3,26.08,13.9,17.24,26.46L209.85,834.85c-10.46,14.34-33.14,5.07-30.57-12.49l65.05-340.47Z" transform="translate(-37.33 0)" style="fill: url(#Dégradé_sans_nom_7)"/>
+</svg>

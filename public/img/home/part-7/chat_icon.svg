@@ -1,0 +1,10 @@
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210mm" height="203.2mm" viewBox="0 0 595.28 576">
+  <defs>
+    <linearGradient id="Dégradé_sans_nom_7" data-name="Dégradé sans nom 7" x1="297.64" y1="703.56" x2="297.64" y2="127.56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#42cbf9"/>
+      <stop offset="1" stop-color="#85f2ff"/>
+    </linearGradient>
+  </defs>
+  <title>chat_icon</title>
+  <path d="M595.28,361.56c0,129.23-133.26,234-297.64,234q-5,0-9.92-.13l.28.13c-45.25,43.61-103.59,84.4-171,108,0,0,36.36-67.54,18.32-127.61a58,58,0,0,0-24.49-32.21C43.23,500.84,0,435.17,0,361.56c0-129.23,133.26-234,297.64-234S595.28,232.33,595.28,361.56Z" transform="translate(0 -127.56)" style="fill: url(#Dégradé_sans_nom_7)"/>
+</svg>
