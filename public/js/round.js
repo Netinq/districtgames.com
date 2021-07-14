@@ -1,9 +1,9 @@
 const progress = 100;
-const circles = document.getElementsByClassName('circle-prog');
+const circles = document.getElementsByClassName("circle-prog");
+const rounds = document.getElementsByClassName("round");
 const part5 = document.getElementById('part-5');
 
 let active = false;
-
 
 document.addEventListener("scroll", () => {
     if (!active)
@@ -18,3 +18,19 @@ document.addEventListener("scroll", () => {
         }
     }
 });
+
+function resize_round() {
+    Array.from(rounds).forEach((round) => {
+        const height = round.offsetHeight;
+        round.style.width = height + 'px';
+    });
+}
+
+window.addEventListener("resize", () => {
+    resize_round();
+});
+window.addEventListener("load", () => {
+    resize_round();
+});
+
+resize_round();

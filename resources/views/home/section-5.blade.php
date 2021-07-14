@@ -2,7 +2,7 @@
     <div class="content">
         <div class="rounds">
             <div class="round">
-                <svg class="circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                <svg class="circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <circle class="circle-back" cx="80" cy="80" r="74"></circle>
                     <circle class="circle-prog" cx="80" cy="80" r="74" stroke="#6AABFF"></circle>
                 </svg>
@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="round">
-                <svg class="circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                <svg class="circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <circle class="circle-back" cx="80" cy="80" r="74"></circle>
                     <circle class="circle-prog" cx="80" cy="80" r="74" stroke="#FE8E23"></circle>
                 </svg>
