@@ -708,6 +708,13 @@ section#part-7 div.content
     justify-content: flex-start;
     align-items: center;
 }
+@media (max-width: 940px) {
+    section#part-7 div.content
+    {
+        width: calc(100vw - 100px);
+        padding: 0 50px;
+    }
+}
 
 section#part-7 div.content img#p7-title
 {
@@ -765,6 +772,12 @@ section#part-7 div.content div.p7-sub div.p7-hint-box img
 {
     height: 5vw;
 }
+@media (max-width: 940px) {
+    section#part-7 div.content div.p7-sub div.p7-hint-box img
+    {
+        height: 15vw;
+    }
+}
 
 section#part-7 div.content div.p7-sub div.p7-hint-box h3
 {
@@ -810,6 +823,7 @@ section#part-7 div.content div.p7-sub div.p7-line-box img
     height: 7.5vw;
     margin: 15px;
 }
+
 section#part-7 div.content div.p7-sub div.p7-line-box img.star
 {
     height: 2vw;
