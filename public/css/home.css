@@ -706,7 +706,7 @@ section#part-7 div.content
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 @media (max-width: 940px) {
     section#part-7 div.content
@@ -834,16 +834,6 @@ section#part-7 div.content div.p7-sub div.p7-line-box h4
     color: #ffff;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    font-size: 1.2rem;
-    text-align: left;
-    white-space: pre-line;
-    margin: 0;
-}
-section#part-7 div.content div.p7-sub div.p7-line-box h4
-{
-    color: #ffff;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
     font-size: 1.4rem;
     text-align: left;
     white-space: pre-line;
@@ -891,6 +881,145 @@ section#part-7 div.content div.p7-sub div.p7-line-box a img
 section#part-7 div.content div.p7-sub div.p7-line-box a span
 {
     color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+    section#part-7 div.content
+    {
+        align-items: center;
+    }
+    section#part-7 div.content div.p7-sub
+    {
+        height: auto;
+        margin-bottom: 100px;
+        position: relative;
+        width: calc(100vw - 100px);
+        justify-content: space-evenly;
+    }
+    .flex-v {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .flex-v::-webkit-scrollbar {
+        display: none;
+    }
+    section#part-7 div.content div.p7-sub div.p7-line-box
+    {
+        width: calc(100% / 3 - 75px);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 50px;
+        border-radius: 25px;
+        position: relative;
+    }
+    section#part-7 div.content div.p7-sub div.p7-line-box a
+    {
+        right: auto;
+        top: auto;
+        padding: 0 25px;
+        margin: 0 15px;
+        margin-bottom: 50px;
+        border-radius: 25px;
+        position: relative;
+        line-height: 5vw;
+        text-align: center;
+        text-decoration: none !important;
+        width: calc(100% - 60px);
+    }
+    section#part-7 div.content div.p7-sub div.p7-line-box a img
+    {
+        display: none;
+    }
+    section#part-7 div.content div.p7-sub div.p7-line-box h4
+    {
+        color: #ffff;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        text-align: left;
+        white-space: pre-line;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    section#part-7 div.content div.p7-sub div.p7-line-box p
+    {
+        text-align: center;
+        margin-left: 0 !important;
+        font-size: 1.1rem;
+        width: 80% !important;
+        height: 15vh;
+    }
+}
+@media (max-width: 1086px) {
+    section#part-7 div.content div.p7-sub div.p7-line-box a span
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    section#part-7 div.content
+    {
+        align-items: flex-start;
+    }
+    section#part-7 div.content div.p7-sub
+    {
+        height: auto;
+        margin-bottom: 100px;
+        position: relative;
+        width: 100%;
+    }
+    .flex-v {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+        flex-wrap: wrap;
+        overflow-x: scroll;
+        width: 100%;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .flex-v::-webkit-scrollbar {
+        display: none;
+    }
+    section#part-7 div.content div.p7-sub div.p7-line-box
+    {
+        width: 50vw !important;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 50px;
+        border-radius: 25px;
+        position: relative;
+    }
+    section#part-7 div.content div.p7-sub div.p7-line-box img
+    {
+        border-radius: 20px;
+        height: 15vh;
+        margin: 15px;
+    }
+    section#part-7 div.content div.p7-sub div.p7-line-box a
+    {
+        height: 10vw;
+        padding: 0 25px;
+        border-radius: 25px;
+        line-height: 10vw;
+        margin-bottom: 25px;
+    }
 }
 
 div.line-green {
