@@ -63,6 +63,7 @@
         @hasSection('noMaster') @else
             <link rel="stylesheet" type="text/css" href="{{ asset('css/master.css') }}">
             <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts/header.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts/footer.css') }}">
         @endif
 
         <!-- GENERATE Stylesheet -->
@@ -82,5 +83,6 @@
     <body class="row">
         @include('layouts.header')
         @yield('content')
+        @include('layouts.footer')
     </body>
 </html>

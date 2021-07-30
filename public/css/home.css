@@ -1073,6 +1073,7 @@ section#part-8
     width: 100vw;
     background-color: #1E0F2E;
     z-index: 100;
+    padding-bottom: 30vw;
 }
 
 section#part-8 div.content
@@ -1241,5 +1242,170 @@ section#part-8 div.content div#price div.txt p {
     section#part-8 div.content div#joinus a
     {
         width: 80%;
+    }
+}
+
+section#part-9
+{
+    position: relative;
+    height: auto;
+    width: 100vw;
+    background-color: #2A1145;
+    z-index: 100;
+    padding-bottom: 150px;
+}
+
+section#part-9 img#bas
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    transform: translateY(-25vw);
+}
+section#part-9 img#charater
+{
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    width: 15vw;
+}
+
+section#part-9 div.content
+{
+    width: calc(100vw - 400px);
+    padding: 0 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    section#part-9 div.content
+    {
+        width: calc(100% - 100px);
+        padding: 0 50px;
+    }
+}
+
+section#part-9 div.content div.avis
+{
+    width: 50vw;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 0;
+    flex-shrink: 0;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+section#part-9 div.content div.avis::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+section#part-9 div.content div.avis div.box
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex: none;
+}
+
+section#part-9 div.content div.avis img.background
+{
+    width: 100%;
+    height: auto;
+}
+
+section#part-9 div.content div.avis img.profil
+{
+    position: absolute;
+    width: 24%;
+    border-radius: 50%;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section#part-9 div.content div.avis div.review
+{
+    position: absolute;
+    width: 80%;
+    height: auto;
+    transform: translateY(-30%);
+    top: 50%;
+    left: 10%;
+    text-align: center;
+}
+
+section#part-9 div.content div.avis div.review h4
+{
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    white-space: pre-line;
+    text-align: center;
+    margin: 0;
+}
+section#part-9 div.content div.avis div.review span
+{
+    color: #259BD6;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    white-space: pre-line;
+    text-align: center;
+}
+
+
+section#part-9 div.content div.avis div.review p
+{
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: .9rem;
+    white-space: pre-line;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-top: 25px;
+}
+
+@media (max-width: 1200px) {
+    section#part-9 div.content div.avis div.review h4
+    {
+        font-size: 1.2rem;
+    }
+    section#part-9 div.content div.avis div.review span
+    {
+        font-size: 1rem;
+    }
+    section#part-9 div.content div.avis div.review p
+    {
+        font-size: .8rem;
+        margin-top: 15px;
+    }
+    section#part-9 div.content div.avis
+    {
+        width: 65vw;
+    }
+}
+
+@media (max-width: 991px) {
+    section#part-9 div.content div.avis
+    {
+        width: 75vw;
+    }
+}
+@media (max-width: 787px) {
+    section#part-9 div.content div.avis
+    {
+        width: 85vw;
     }
 }
