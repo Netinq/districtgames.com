@@ -11,7 +11,7 @@
         </div>
         <div id="joinus" class="box">
             <a href="https://twitter.com/District_Games" target="_blank"><img src="{{ asset('img/home/part-8/twitter.png')}}" alt="Twitter link"></a>
-            <a href="#" target="_blank"><img src="{{ asset('img/home/part-8/discord.png')}}" alt="Discord link"></a>
+            <a href="https://discord.gg/zPnzmq449d" target="_blank"><img src="{{ asset('img/home/part-8/discord.png')}}" alt="Discord link"></a>
             <a href="https://www.instagram.com/districtgames.off/" target="_blank"><img src="{{ asset('img/home/part-8/instagram.png')}}" alt="Instagram link"></a>
         </div>
     </div>
