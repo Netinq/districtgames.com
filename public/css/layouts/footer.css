@@ -1,0 +1,127 @@
+footer {
+    position: relative;
+    width: calc(100vw - 100px);
+    height: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #1A0D29;
+    z-index: 100;
+}
+
+footer img.back {
+    position: absolute;
+    height: 80%;
+    width: auto;
+    right: 50px;
+    top: 10%;
+    z-index: 101;
+}
+
+footer div.box {
+    width: calc(100% / 5);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+    z-index: 102;
+}
+
+@media (max-width: 1200px) {
+    footer div.box {
+        width: calc(100% / 4);
+    }
+}
+
+@media (max-width: 991px) {
+    footer div.box {
+        width: calc(100% / 2);
+    }
+}
+
+@media (max-width: 767px) {
+    footer div.box {
+        width: 100%;
+    }
+    footer img.back {
+        display: none;
+    }
+}
+
+footer div.box p.title
+{
+    color: #DD9230;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px;
+}
+footer div.box a
+{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none !important;
+    margin: 5px 0;
+}
+
+footer div.card{justify-content: center;position: relative;margin: 0;}
+footer div.card::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #2A1145;
+    border-radius: 2px;
+}
+@media (max-width: 767px) {
+footer div.card::after {
+    display: none;
+}
+}
+footer div.card img.logo{height: 150px;}
+footer div.card p {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+footer div.card p span {color: #DD9230;}
+footer div.card div.social {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+footer div.card div.social a {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #513679;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    transition: .3s all;
+}
+footer div.card div.social a img {height: 20px;}
+footer div.card div.social a:hover {transform: scale(1.1);};
+footer div.card div.social a:active {transform: scale(.9);};
