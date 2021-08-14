@@ -28,3 +28,11 @@ if (document.documentElement.offsetWidth >= 991) {
         }
     });
 }
+
+const mobile = document.getElementById('nav-mobile');
+
+function showMobile()
+{
+    if (mobile.classList.contains('show-mobile')) mobile.classList.remove('show-mobile');
+    else mobile.classList.add('show-mobile')
+}
