@@ -193,8 +193,11 @@ section  div.title span {
         min-height: 100vh !important;
         height: 100vh !important;
         position: relative;
-        justify-content: center;
         overflow-y: hidden;
+    }
+    section#part-1 div.flex
+    {
+        margin-top: 50px;
     }
     section#part-1 div.portfolio {
         align-self: center;
