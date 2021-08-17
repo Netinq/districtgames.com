@@ -22,6 +22,19 @@ section#part-1 div.flex
     width: calc(100vw - 200px);
     padding: 0 100px;
 }
+section#part-1 div.flex img#logo-m
+{
+    display: none;
+}
+
+@media (max-width: 991px) {
+    section#part-1 div.flex img#logo-m
+    {
+        display: block;
+        height: 75px;
+        align-self: center;
+    }
+}
 
 section#part-1 img#people {
     height: 25vw;
@@ -197,7 +210,9 @@ section  div.title span {
     }
     section#part-1 div.flex
     {
-        margin-top: 50px;
+        margin-top: 25px;
+        width: calc(100vw - 100px);
+        padding: 0 50px;
     }
     section#part-1 div.portfolio {
         align-self: center;
