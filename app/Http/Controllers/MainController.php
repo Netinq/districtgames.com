@@ -16,4 +16,9 @@ class MainController extends Controller
     {
         return view('infos');
     }
+
+    public function portfolio()
+    {
+        return view('portfolio');
+    }
 }

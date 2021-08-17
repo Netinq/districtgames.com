@@ -1,0 +1,14 @@
+section#part-1
+{
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    background-color: #0d8774;
+    background: rgb(13,135,116);
+    background: linear-gradient(180deg, rgba(13,135,116,1) 25%, rgba(10,154,182,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+}
