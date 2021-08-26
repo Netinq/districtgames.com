@@ -66,6 +66,11 @@
             <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts/footer.css') }}">
         @endif
 
+        <!-- STATIC Stylesheets -->
+        @hasSection('admin')
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
+        @endif
+
         <!-- GENERATE Stylesheet -->
         @if($styles ?? null)
             @foreach($styles as $style)
@@ -81,9 +86,9 @@
     </head>
 
     <body class="row">
-        @include('layouts.header')
+        @hasSection('admin') @else @include('layouts.header') @endif
         @yield('content')
-        @include('layouts.footer')
+        @hasSection('admin') @else @include('layouts.footer') @endif
 
         <script src="{{ asset('js/header.js')}}"></script>
     </body>
