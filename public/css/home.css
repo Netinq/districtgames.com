@@ -1,7 +1,7 @@
 section#part-1
 {
     position: relative;
-    height: 80vh;
+    height: calc(80vh - 75px);
     width: 100vw;
     background-color: #0d8774;
     background: rgb(13,135,116);
@@ -11,6 +11,7 @@ section#part-1
     justify-content: flex-start;
     align-items: center;
     overflow-x: hidden;
+    padding-top: 75px;
 }
 section#part-1 div.flex
 {
@@ -345,7 +346,7 @@ section#part-3 div.ctn
 
 section#part-3 div.ctn img
 {
-    height: 50vh;
+    height: 65vh;
 }
 
 @media (max-width: 1300px) {section#part-3 div.ctn img{height: 40vh;}}
@@ -406,11 +407,11 @@ section#part-3 div.ctn div.p3ca-ctn {
     position: relative;
 }
 
-section#part-3 div.ctn div.p3ca-ctn p {
+section#part-3 div.ctn div.p3ca-ctn div.p-ct {
     width: 50%;
     height: 55%;
-    top: 20%;
-    left: 25%;
+    top: 35%;
+    left: 20%;
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -418,7 +419,13 @@ section#part-3 div.ctn div.p3ca-ctn p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ffff;
+}
+section#part-3 div.ctn div.p3ca-ctn p {
+    height: auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #27211D;
     font-size: 1.2rem;
 }
 
@@ -1241,9 +1248,11 @@ section#part-8 div.content div#price div.txt p {
     }
     section#part-8 div.content div#price div.txt p {
         font-size: .8rem;
+        margin-bottom: 10px;
     }
     section#part-8 div.content div#price div.txt a {
         width: 75%;
+        margin-bottom: 10px;
     }
     section#part-8 div.content div#joinus
     {

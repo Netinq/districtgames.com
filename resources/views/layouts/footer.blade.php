@@ -15,9 +15,9 @@
     </div>
     <div class="box">
         <p class="title">pages légales</p>
-        <a target="_blank" href="/mentions-legales">Mentions Légales</a>
-        <a target="_blank" href="/cgu">CGU</a>
-        <a target="_blank" href="/cgv">CGV</a>
+        <a target="_blank" href="{{ route('legal') }}">Mentions Légales</a>
+        <a target="_blank" href="{{ route('legal') }}">CGU</a>
+        {{-- <a target="_blank" href="/cgv">CGV</a> --}}
     </div>
     <div class="box">
         <p class="title">tarifs</p>

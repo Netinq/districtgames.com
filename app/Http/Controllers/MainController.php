@@ -21,4 +21,14 @@ class MainController extends Controller
     {
         return view('portfolio');
     }
+
+    public function legal()
+    {
+        return view('legal');
+    }
+
+    public function shop()
+    {
+        return view('shop');
+    }
 }

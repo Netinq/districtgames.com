@@ -1,0 +1,38 @@
+section
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0d8774;
+    background: rgb(13,135,116);
+    background: linear-gradient(180deg, rgba(13,135,116,1) 25%, rgba(10,154,182,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+section img.icon
+{
+    height: 15vh;
+    margin-bottom: 50px;
+    max-width: 80vw;
+}
+
+section img.text
+{
+    height: 15vh;
+    max-width: 80vw;
+}
+
+@media (max-width: 700px) {
+    section img.icon
+    {
+        height: 10vh;
+    }
+    section img.text
+    {
+        height: auto;
+    }
+}
