@@ -1,15 +1,22 @@
 <section id="part-2">
     <div class="flex">
         <nav>
-            <div class="box"><h3>Catégories</h3></div>
-            <div class="box">
-                <button>TEST</button>
-                <button>TEST</button>
-                <button>TEST</button>
+            <div class="box {{ $portfolio == 0 ? 'green' : 'purple' }}"><h3>Catégories</h3></div>
+            <div class="box {{ $portfolio == 0 ? 'green' : 'purple' }} ">
+                @foreach ($categories as $cat)
+                    <a
+                    href="{{ route('portfolio', [$portfolio, $cat->id])}}"
+                    class="{{ $cat->id == $category ? 'active' : '' }}">
+                        {{$cat->title}}</a>
+                @endforeach
             </div>
         </nav>
-        <div class="box box-images">
-
+        <div class="box box-images {{ $portfolio == 0 ? 'green' : 'purple' }}">
+            @foreach ($images as $img)
+            <a href="{{ route('image.fetch', $img->id)}}" target="_blank">
+                <img src="{{ route('image.fetch_little', $img->id)}}" alt="">
+            </a>
+            @endforeach
         </div>
     </div>
 </section>

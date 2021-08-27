@@ -106,19 +106,19 @@ section#part-1 div.flex div.choose {
     margin-top: 50px;
 }
 
-section#part-1 div.flex div.choose button {
+section#part-1 div.flex div.choose a {
     border: none;
     background: none;
     margin: 0 25px;
     cursor: pointer;
     transition: .3s all;
 }
-section#part-1 div.flex div.choose button:hover {transform: scale(1.1);}
-section#part-1 div.flex div.choose button:active {transform: scale(.9);}
-section#part-1 div.flex div.choose button img {height: 200px;}
-@media (max-width: 1200px) {section#part-1 div.flex div.choose button img {height: 150px;}}
-@media (max-width: 991px) {section#part-1 div.flex div.choose button img {height: 100px;}}
-@media (max-width: 991px) {section#part-1 div.flex div.choose button {padding: 0 10px;}}
+section#part-1 div.flex div.choose a:hover {transform: scale(1.1);}
+section#part-1 div.flex div.choose a:active {transform: scale(.9);}
+section#part-1 div.flex div.choose a img {height: 200px;}
+@media (max-width: 1200px) {section#part-1 div.flex div.choose a img {height: 150px;}}
+@media (max-width: 991px) {section#part-1 div.flex div.choose a img {height: 100px;}}
+@media (max-width: 991px) {section#part-1 div.flex div.choose a {padding: 0 10px;}}
 
 section#part-2
 {
@@ -190,8 +190,7 @@ section#part-2 div.flex nav h3 {
     margin: 0;
 }
 
-section#part-2 div.flex nav button {
-    white-space: pre-line;
+section#part-2 div.flex nav a {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -202,14 +201,34 @@ section#part-2 div.flex nav button {
     border: none;
     background: none;
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 15px 15px;
     transition: .3s all;
     cursor: pointer;
+    text-decoration: none;
 }
-section#part-2 div.flex nav button:hover {background-color: #191B3E;}
+section#part-2 div.flex nav a:hover {background-color: #191B3E;}
 
 section#part-2 div.flex div.box-images {
     width: calc(70vw - 200px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+section#part-2 div.flex div.box-images img {
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+    transition: .3s all;
+    position: relative;
+}
+
+section#part-2 div.flex div.box-images img:hover {
+    transform: scale(1.1);
+    z-index: 100;
 }
 
 @media (max-width:991px) {
@@ -227,13 +246,37 @@ section#part-2 div.flex div.box-images {
         justify-content: center;
         align-items: center;
     }
-    section#part-2 div.flex nav div button {
+    section#part-2 div.flex nav div a {
         margin: 0 10px;
     }
 }
 
 section#part-2 div.box {
     background-color: #171138;
+    border-top: 4px solid #0d8774;
     border-radius: 15px;
     padding: 20px 25px;
+    transition: .3s all;
+}
+
+section#part-2 div.purple {
+    border-top: 4px solid #772d90;
+    animation: opacity .3s ease-in-out;
+}
+
+section#part-2 div.green {
+    border-top: 4px solid #0d8774;
+    animation: opacity .3s ease-in-out;
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+section#part-2 div.flex nav .green a.active {
+    color: #0d8774;
+}
+section#part-2 div.flex nav .purple a.active {
+    color: #772d90;
 }

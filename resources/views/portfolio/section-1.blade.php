@@ -6,8 +6,8 @@
             <span>portfolio</span>
         </h2>
         <div class="choose">
-            <button><img src="{{ asset('img/portfolio/districtgames.png')}}" alt=""></button>
-            <button><img src="{{ asset('img/portfolio/districtlight.png')}}" alt=""></button>
+            <a href="{{ route('portfolio', 0)}}"><img src="{{ asset('img/portfolio/districtgames.png')}}" alt=""></a>
+            <a href="{{ route('portfolio', 1)}}"><img src="{{ asset('img/portfolio/districtlight.png')}}" alt=""></a>
         </div>
     </div>
 </section>

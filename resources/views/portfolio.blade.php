@@ -6,4 +6,5 @@
 @section('content')
 @include('portfolio.section-1')
 @include('portfolio.section-2')
+<script src="{{ asset('js/portfolio.js')}}"></script>
 @endsection
