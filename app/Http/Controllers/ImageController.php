@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
 use Intervention\Image\Facades\Image;
 use App\Annonce;
-use App\Models\image as ModelsImage;
+use App\Models\Image as ModelsImage;
 
 class ImageController extends Controller
 {
