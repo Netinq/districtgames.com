@@ -32,4 +32,17 @@ class ImageController extends Controller
 
         return $response;
     }
+
+    function fetch_size($id, $size)
+    {
+        $image = ModelsImage::where('id', $id)->first();
+        $image_file = Image::make($image->image);
+        $image_file->resize(null, $size, function ($constraint) {
+            $constraint->aspectRatio();
+        });
+        $response = Response::make($image_file->encode('png'));
+        $response->header('Content-Type', 'image/png');
+
+        return $response;
+    }
 }

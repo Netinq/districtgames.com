@@ -6,23 +6,10 @@
 @section('admin', true)
 @section('content')
 <div class="wrapper col-10 offset-1">
-    @if(session()->has('message'))
-    <div class="alert alert-info">
-        {{ session('message') }}
-    </div>
-    @endif
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('admin.index') }}">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('admin.news') }}">News</a>
-            </li>
-        </ul>
-    </div>
-    </nav>
+    @include('admin.nav')
+    <hr class="solid">
+    <h1>Bienvenue sur le panneau d'administration</h1>
+    <hr class="solid">
     <form method="POST" action="{{ route('category.store')}}"  enctype="multipart/form-data">
         @csrf
         @if ($errors->any())
@@ -37,12 +24,13 @@
         <h2>Ajouter une catégorie</h2>
         <div class="form-group">
             <label for="title">Titre de la catégorie</label>
-            <input type="text" name="title" class="form-control" id="title" placeholder="Titre de l'image">
+            <input type="text" name="title" class="form-control" id="title">
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-info">Ajouter la catégorie</button>
         </div>
     </form>
+    <hr class="solid">
     <form method="POST" action="{{ route('portfolio.store')}}"  enctype="multipart/form-data">
         @csrf
         @if ($errors->any())
@@ -82,5 +70,53 @@
             <button type="submit" class="btn btn-info">Ajouter l'image au portfolio</button>
         </div>
     </form>
+    <hr class="solid">
+    <h2>Liste des catégories</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <td>Titre</td>
+                <td>Action(s)</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($categories as $cat)
+            <tr>
+                <th>{{$cat->id}}</th>
+                <td>{{$cat->title}}</td>
+                <td><form action="{{route('category.delete', $cat->id)}}" method="POST">@csrf @method("DELETE")
+                    <button class="btn btn-danger" type="submit">Supprimer</button></form></td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
+    <hr class="solid">
+    <h2>Liste des images</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <td>Image</td>
+                <td>Titre</td>
+                <td>Portfolio</td>
+                <td>Catégorie</td>
+                <td>Action(s)</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($images as $img)
+            <tr>
+                <th>{{$img->id}}</th>
+                <td><img src="{{ route('image.fetch_size', [$img->id, 75])}}" alt=""></td>
+                <td>{{$img->title}}</td>
+                <td>{{$img->portfolio}}</td>
+                <td>{{$img->category}}</td>
+                <td><form action="{{route('portfolio.delete', $img->id)}}" method="POST">@csrf @method("DELETE")
+                    <button class="btn btn-danger" type="submit">Supprimer</button></form></td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
 </div>
 @endsection

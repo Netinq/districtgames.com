@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Image;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -18,8 +19,12 @@ class AdminController extends Controller
         if (Session::get('admin') != null) {
 
             $categories = Category::all();
-
-            return view('admin.index', compact('categories'));
+            $images = Image::all();
+            foreach ($images as $img) {
+                $img->portfolio = ($img->portfolio == 0) ? 'DistrictGames' : 'DistrictLight';
+                $img->category = Category::where('id', $img->category)->select('title')->first()->title;
+            }
+            return view('admin.index', compact('categories', 'images'));
         } else return redirect()->route('admin.login');
     }
 

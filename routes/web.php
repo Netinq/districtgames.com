@@ -17,3 +17,4 @@ Route::get('/portfolio{portfolio?}/{category?}', [PortfolioController::class, 'i
 // ================== //
 Route::get('/image/fetch/{id}', [ImageController::class, 'fetch'])->name('image.fetch');
 Route::get('/image/fetch_little/{id}', [ImageController::class, 'fetch_little'])->name('image.fetch_little');
+Route::get('/image/fetch_size/{id}/{size}', [ImageController::class, 'fetch_size'])->name('image.fetch_size');

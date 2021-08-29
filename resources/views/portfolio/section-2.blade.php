@@ -3,6 +3,8 @@
         <nav>
             <div class="box {{ $portfolio == 0 ? 'green' : 'purple' }}"><h3>Catégories</h3></div>
             <div class="box {{ $portfolio == 0 ? 'green' : 'purple' }} ">
+                <a href="{{ route('portfolio', $portfolio)}}"
+                class="{{ !(isset($category)) ? 'active' : '' }}">Toute(s) catégorie(s)</a>
                 @foreach ($categories as $cat)
                     <a
                     href="{{ route('portfolio', [$portfolio, $cat->id])}}"

@@ -10,4 +10,7 @@ Route::get('/login', [AdminController::class, 'login'])->name('admin.login');
 Route::post('/check', [AdminController::class, 'check'])->name('admin.check');
 
 Route::post('/portfolio/store', [PortfolioController::class, 'store'])->name('portfolio.store');
+Route::delete('/portfolio/delete/{id}', [PortfolioController::class, 'delete'])->name('portfolio.delete');
+
 Route::post('/categorie/store', [PortfolioController::class, 'store_category'])->name('category.store');
+Route::delete('/categorie/delete/{id}', [PortfolioController::class, 'delete_category'])->name('category.delete');
