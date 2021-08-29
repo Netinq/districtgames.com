@@ -889,7 +889,7 @@ section#part-3 img.croquis
 }
 section#part-3 div.prepare
 {
-    width: calc(50% - 100px);
+    width: calc(50% - 150px);
 }
 
 @media (max-width: 991px) {
@@ -910,13 +910,13 @@ section#part-3 div.prepare
     }
     section#part-3 div.prepare
     {
-        width: calc(100% - 100px);
+        width: calc(100% - 150px);
     }
 }
 
 div.brown-box
 {
-    padding: 25px 50px;
+    padding: 50px 75px;
     background-color: #2A1200;
     border-radius: 20px;
 }
@@ -952,6 +952,7 @@ section#part-3 img#gauche2 {
     left: 0;
     width: 15vw;
     z-index: 100;
+    transform: translateY(25%);
 }
 section#part-3 img#droite2 {
     position: absolute;
@@ -971,19 +972,19 @@ section#part-3 img#liane2 {
 section#part-4
 {
     position: relative;
-    height: 100vh;
+    height: auto;
     width: calc(100vw - 200px);
     background-color: #301C00;
     background: rgb(39,26,53);
     background: linear-gradient(0deg, rgba(39,26,53,1) 0%, rgba(48,28,0,1) 100%);
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     padding: 0 100px;
     padding-top: 100px;
-    padding-bottom: 300px;
+    padding-bottom: 30vw;
 }
 
 @media (max-width: 991px) {
@@ -991,6 +992,125 @@ section#part-4
     {
         width: calc(100vw - 100px);
         padding: 0 50px;
+        height: auto;
         padding-top: 150px;
+        padding-bottom: 300px;
     }
+}
+
+section#part-4 div.pay{width: 50%;}
+section#part-4 div.brown-box p
+{
+    line-height: 1.5;
+}
+@media (max-width: 991px) {section#part-4 div.pay{width: auto;}}
+
+.flex-h {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
+section#part-4 div.p7-sub
+{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+section#part-4 div.p7-sub div.p7-hint-box
+{
+    width: calc(100% / 3 - 100px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1400px) {section#part-4 div.p7-sub div.p7-hint-box{width: calc(100% / 3 - 50px);}}
+@media (max-width: 1209px) {section#part-4 div.p7-sub div.p7-hint-box{width: calc(100% / 2 - 50px);}}
+@media (max-width: 940px) {section#part-4 div.p7-sub div.p7-hint-box{width: 100%;}}
+
+section#part-4 div.p7-sub div.p7-hint-box img
+{
+    height: 5vw;
+}
+@media (max-width: 940px) {
+    section#part-4 div.p7-sub div.p7-hint-box img
+    {
+        height: 15vw;
+    }
+}
+
+section#part-4 div.p7-sub div.p7-hint-box h3
+{
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+section#part-4 div.p7-sub div.p7-hint-box h3 span
+{
+    color: #9DF841;
+}
+
+section#part-4 div.p7-sub div.p7-hint-box p
+{
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+section#part-4 div.discord
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section#part-4 div.discord div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#part-4 div.discord div img
+{
+    height: 150px;
+    border-radius: 20px;
+}
+
+section#part-4 div.discord div p
+{
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+section#part-4 div.discord p span
+{
+    color: #f89e41;
+}
+
+section#part-4 img#bas
+{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }

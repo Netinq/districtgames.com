@@ -8,4 +8,5 @@
 @include('infos.section-1')
 @include('infos.section-2')
 @include('infos.section-3')
+@include('infos.section-4')
 @endsection
