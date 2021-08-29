@@ -48,4 +48,7 @@
             </div>
         </div>
     </div>
+    <img id="gauche" src="{{asset('img/infos/gauche.png')}}">
+    <img id="droite" src="{{asset('img/infos/droite.png')}}">
+    <img id="liane" src="{{asset('img/infos/liane_2.png')}}">
 </section>
