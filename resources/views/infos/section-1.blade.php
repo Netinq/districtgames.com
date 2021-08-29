@@ -1,4 +1,5 @@
 <section id="part-1">
+    <img id="logo-m" src="{{ asset('img/logo-fluid.png')}}" alt="Logo">
     <div class="message">
         <h2>Envoyez-nous un <span>message</span></h2>
         <form action="{{route('sendmail')}}" method="POST">
