@@ -10,12 +10,11 @@ section#part-1
     background-size: cover;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
-    overflow-x: hidden;
     padding: 0 100px;
     padding-top: 150px;
-    padding-bottom: 200px;
 }
 
 @media (max-width: 991px) {
@@ -25,4 +24,105 @@ section#part-1
         padding: 0 50px;
         padding-top: 150px;
     }
+}
+
+section#part-1 div.title
+{
+    width: 100%;
+    text-align: center;
+}
+
+section#part-1 div.title h2 {
+    white-space: pre-line;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffff;
+    font-size: 1.4rem;
+}
+
+section#part-1 div.title h2 span {
+    color: #FDB042;
+}
+
+section#part-1 div.pan
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+section#part-1 a img
+{
+    height: 100px;
+    margin-bottom: 25px;
+    z-index: 101;
+    position: relative;
+    cursor: pointer;
+    transition: .3s all;
+}
+section#part-1 a img:hover
+{
+    transform: scale(1.1);
+}
+section#part-1 img.stick
+{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+section#part-1 div.discord
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+section#part-1 img#chat
+{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    transform: translateY(15%);
+    width: 20vw;
+    z-index: 101;
+}
+
+section#part-1 div.discord img{width: 50%;}
+
+@media (max-width:991px) {
+    section#part-1
+    {
+        height: auto;
+    }
+    section#part-1 div.discord
+    {
+        width: 100%;
+        margin: 50px 0;
+        order: 2;
+    }
+    section#part-1 div.pan
+    {
+        width: 100%;
+        height: 100vh;
+        order: 3;
+    }
+    section#part-1 a img
+    {
+        height: 75px;
+    }
+}
+@media (max-width: 767px) {
+    section#part-1 div.discord img{width: 100%;}
 }
