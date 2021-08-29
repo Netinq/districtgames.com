@@ -12,6 +12,10 @@ footer {
     z-index: 100;
 }
 
+@media (max-width:991px) {
+    footer {padding-bottom: 150Px;}
+}
+
 footer img.back {
     position: absolute;
     height: 80%;
