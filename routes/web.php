@@ -11,6 +11,7 @@ Route::get('/', [ MainController::class, 'home'])->name('home');
 Route::get('/infos', [MainController::class, 'infos'])->name('infos');
 Route::get('/legal', [MainController::class, 'legal'])->name('legal');
 Route::get('/shop', [MainController::class, 'shop'])->name('shop');
+Route::get('/contact', [MainController::class, 'contact'])->name('contact');
 Route::get('/portfolio{portfolio?}/{category?}', [PortfolioController::class, 'index'])->name('portfolio');
 
 Route::post('/mail', [MailController::class, 'send'])->name('sendmail');
