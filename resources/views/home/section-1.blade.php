@@ -8,7 +8,7 @@
         <img id="cloud4" class="cloud" src="{{ asset('img/home/part-1/cloud.svg') }}" alt="People draw">
         <div class="portfolio">
             <img id="portfolio" src="{{ asset('img/home/part-1/portfolio.png') }}" alt="Portefolio draw">
-            <a class="button" href="">portfolio</a>
+            <a class="button" href="{{ route('portfolio')}}">portfolio</a>
         </div>
         <div class="title">
             <h1><span>Bienvenue</span>
