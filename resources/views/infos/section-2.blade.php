@@ -1,23 +1,23 @@
-<section id="part-7">
-    <div class="content">
-        <img id="p7-title" src="{{ asset('img/home/part-7/title.png')}}" alt="Nos services">
-        <div class="p7-sub flex-h">
-            <div class="p7-hint-box">
-                <img src="{{ asset('img/home/part-7/storm_icon.svg')}}" alt="Storm">
-                <h3>Réalisation <span>rapides</span></h3>
-                <p>Nous vous communiquons un délais et si celui ci n'est pas respecté nous retirons 5% par jour de retard.</p>
-            </div>
-            <div class="p7-hint-box">
-                <img src="{{ asset('img/home/part-7/chat_icon.svg')}}" alt="Chat">
-                <h3>à <span>l'écoute</span></h3>
-                <p>Nous vous répondons au minimum de 9h à 18h du Lundi au Vendredi.</p>
-            </div>
-            <div class="p7-hint-box">
-                <img src="{{ asset('img/home/part-7/palette_icon.svg')}}" alt="Palette">
-                <h3><span>Adapté</span> à tous</h3>
-                <p>Nous vous proposons 2 formats de réalisation nos différentes gammes.</p>
-            </div>
+<section id="part-2">
+    <img class="trans" src="{{asset('img/infos/liaison.png')}}" alt="">
+    <div class="title">
+        <h2>Comment
+            <span>Commander ?</span>
+        </h2>
+    </div>
+    <div class="tarif">
+        <div class="choose">
+            <h4>Renseignez-vous sur nos <span>services</span></h4>
+            <p>Choissisez le service qui vous correspond.</p>
         </div>
+        <div id="price" class="box">
+            <h3>Fiche <span>tarifaire</span></h3>
+            <p>Téléchargez le .pdf pour visualiser nos fiches tarifaires.</p>
+            <a href="{{ asset('upload/FichePrix_DistricGames.pdf')}}" download><img src="{{ asset('img/home/part-8/download_districtgames.png')}}" alt="Download button"></a>
+            <a href="{{ asset('upload/FichePrix_DistricGames.pdf')}}" download><img src="{{ asset('img/home/part-8/download_districtlight.png')}}" alt="Download button"></a>
+        </div>
+    </div>
+    <div class="presta">
         <div class="p7-sub flex-v">
             <div class="p7-line-box line-green">
                 <img src="img/logo.png" alt="Logo">
