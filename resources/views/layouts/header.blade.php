@@ -1,7 +1,7 @@
 <header id="header" class="{{ Route::is('portfolio') ? 'blue' : '' }}">
     <nav class="web">
         <a href="{{ route('portfolio')}}">portfolio</a>
-        <a href="/contact">contact</a>
+        <a href="{{ route('contact')}}">contact</a>
         <a href="{{ route('home')}}" class="logo"><img src="{{ asset('img/logo-fluid.png')}}" alt="Logo"></a>
         <a href="{{ route('shop')}}">boutique</a>
         <a href="{{ route('infos')}}">infos</a>
@@ -15,7 +15,7 @@
 <nav class="mobile {{ Route::is('portfolio') ? 'blue' : '' }}" id="nav-mobile">
     <a href="{{ route('home')}}" class="logo"><img src="{{ asset('img/logo-fluid.png')}}" alt="Logo"></a>
     <a href="{{ route('portfolio')}}">portfolio</a>
-    <a href="/contact">contact</a>
+    <a href="{{ route('contact')}}">contact</a>
     <a href="{{ route('shop')}}">boutique</a>
     <a href="{{ route('infos')}}">infos</a>
     <button onclick="showMobile();" class="mobile">
