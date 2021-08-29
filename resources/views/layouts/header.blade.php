@@ -3,7 +3,7 @@
         <a href="{{ route('portfolio')}}">portfolio</a>
         <a href="/contact">contact</a>
         <a href="{{ route('home')}}" class="logo"><img src="{{ asset('img/logo-fluid.png')}}" alt="Logo"></a>
-        <a href="/boutique">boutique</a>
+        <a href="{{ route('shop')}}">boutique</a>
         <a href="{{ route('infos')}}">infos</a>
     </nav>
     {{-- <img class="mobile logo" src="{{ asset('img/logo-fluid.png')}}" alt="Logo"> --}}
@@ -16,7 +16,7 @@
     <a href="{{ route('home')}}" class="logo"><img src="{{ asset('img/logo-fluid.png')}}" alt="Logo"></a>
     <a href="{{ route('portfolio')}}">portfolio</a>
     <a href="/contact">contact</a>
-    <a href="/boutique">boutique</a>
+    <a href="{{ route('shop')}}">boutique</a>
     <a href="{{ route('infos')}}">infos</a>
     <button onclick="showMobile();" class="mobile">
         <img class="mobile close" src="{{asset('svg/close.svg')}}" alt="">
