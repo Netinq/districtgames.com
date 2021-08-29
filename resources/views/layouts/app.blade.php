@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+
+        <link rel="preload" href="{{asset('img/load.gif')}}" as="image">
+
         <!-- Default meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
@@ -86,10 +89,24 @@
     </head>
 
     <body class="row">
+        <div class="load" id="load"><img src="{{ asset('img/load.gif')}}" alt="Load animation"></div>
         @hasSection('admin') @else @include('layouts.header') @endif
         @yield('content')
         @hasSection('admin') @else @include('layouts.footer') @endif
-
         <script src="{{ asset('js/header.js')}}"></script>
+        <script>
+            window.addEventListener("load", function(e) {
+                const load = document.getElementById('load');
+                var fadeEffect = setInterval( () => {
+                    if (!load.style.opacity) load.style.opacity = 1;
+                    if (load.style.opacity > 0) {
+                        load.style.opacity -= 0.1;
+                    } else {
+                        load.style.display = "none";
+                        clearInterval(fadeEffect);
+                    }
+                }, 50);
+            });
+        </script>
     </body>
 </html>

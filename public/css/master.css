@@ -179,3 +179,21 @@ a:hover, a:active, a:visited {
         transform: translateY(0);
     }
 }
+
+div.load
+{
+    z-index: 100000000000000;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #036356;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.load img
+{
+    height: 100px;
+}
