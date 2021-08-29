@@ -14,6 +14,9 @@ header {
 header.blue {
     background-color: #0F0A2B;
 }
+header.brown {
+    background-color: #220500;
+}
 
 header nav {
     width: 50%;
@@ -52,6 +55,9 @@ header nav a:hover {
 
 header.blue nav a:hover {
     background-color: #17103d;
+}
+header.brown nav a:hover {
+    background-color: #33120c;
 }
 
 header nav a.logo {
@@ -105,6 +111,12 @@ header.scroll-header  nav a.logo img {
     header.blue {
         background: none;
     }
+    header.brown button {
+        background-color: #220500;
+    }
+    header.brown {
+        background: none;
+    }
 }
 
 nav.mobile {
@@ -122,6 +134,9 @@ nav.mobile {
 }
 nav.blue {
     background-color: #0F0A2B;
+}
+nav.brown {
+    background-color: #220500;
 }
 
 nav.show-mobile {
@@ -151,6 +166,9 @@ nav.mobile a:hover {
 nav.blue a:hover {
     background-color: #17103d;
 }
+nav.brown a:hover {
+    background-color: #33120c;
+}
 
 nav.mobile a.logo {
     padding: 0;
@@ -175,6 +193,9 @@ nav.mobile button {
 }
 nav.blue button {
     background-color: #17103d;
+}
+nav.brown button {
+    background-color: #220500;
 }
 
 

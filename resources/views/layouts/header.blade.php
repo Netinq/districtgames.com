@@ -1,4 +1,4 @@
-<header id="header" class="{{ Route::is('portfolio') ? 'blue' : '' }}">
+<header id="header" class="{{ Route::is('portfolio') ? 'blue' : '' }}{{ Route::is('contact') ? 'brown' : '' }}">
     <nav class="web">
         <a href="{{ route('portfolio')}}">portfolio</a>
         <a href="{{ route('contact')}}">contact</a>
@@ -12,7 +12,7 @@
     </button>
 </header>
 
-<nav class="mobile {{ Route::is('portfolio') ? 'blue' : '' }}" id="nav-mobile">
+<nav class="mobile {{ Route::is('portfolio') ? 'blue' : '' }}{{ Route::is('contact') ? 'brown' : '' }}" id="nav-mobile">
     <a href="{{ route('home')}}" class="logo"><img src="{{ asset('img/logo-fluid.png')}}" alt="Logo"></a>
     <a href="{{ route('portfolio')}}">portfolio</a>
     <a href="{{ route('contact')}}">contact</a>

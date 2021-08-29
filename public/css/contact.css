@@ -5,7 +5,7 @@ section#part-1
     width: calc(100vw - 200px);
     background-color: #220500;
     background-image: url(../img/contact/background.png);
-    background-position: bottom center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
