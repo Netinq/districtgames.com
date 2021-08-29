@@ -1,14 +1,286 @@
 section#part-1
 {
     position: relative;
-    height: 80vh;
-    width: 100vw;
+    height: 85vh;
+    width: calc(100vw - 200px);
     background-color: #0d8774;
     background: rgb(13,135,116);
     background: linear-gradient(180deg, rgba(13,135,116,1) 25%, rgba(10,154,182,1) 100%);
+    background-image: url(../img/infos/background.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 0 100px;
+    padding-top: 150px;
+}
+
+@media (max-width: 991px) {
+    section#part-1
+    {
+        width: calc(100vw - 100px);
+        padding: 0 50px;
+        padding-top: 150px;
+    }
+}
+
+section#part-1 div.message
+{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+section#part-1 div.message form
+{
+    position: relative;
+}
+
+section#part-1 div.message form div.chatbox-ct
+{
+    position: relative;
+}
+section#part-1 div.message form div.chatbox-ct img.chatbox
+{
+    width: 85%;
+    margin-left: 15%;
+}
+section#part-1 div.message form div.chatbox-ct textarea
+{
+    position: absolute;
+    height: 65%;
+    width: 70%;
+    top: 25%;
+    left: 20%;
+    background: transparent;
+    border: none;
+    color: #ffff;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section#part-1 div.message form div.chatbox-ct textarea::placeholder
+{
+    color: #ffff;
+    opacity: .5;
+}
+section#part-1 div.message form img.chat
+{
+    position: absolute;
+    width: 20%;
+    left: 0;
+    bottom: -25%;
+}
+
+section#part-1 div.message h2 {
+    white-space: pre-line;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffff;
+    font-size: 1.4rem;
+}
+
+section#part-1 div.message h2 span {
+    color: #F8AC41;
+}
+
+section#part-1 div.message form div.email
+{
+    width: 73.5%;
+    background-color: #024C4D;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section#part-1 div.message form div.email img
+{
+    height: 25px;
+}
+
+section#part-1 div.message form div.email input
+{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1f6258;
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 15px;
+    width: 50%;
+}
+section#part-1 div.message form div.email button
+{
+    height: 40px;
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: #f89e41;
+    background: rgb(253,151,65);
+    background: linear-gradient(355deg, rgba(253,151,65,1) 0%, rgba(253,170,66,1) 100%);
+    color: #024C4D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s all;
+}
+section#part-1 div.message form div.email button:hover
+{
+    transform: scale(1.1);
+}
+section#part-1 div.message form div.email input::placeholder
+{
+    color: #ffff;
+    opacity: .5;
+}
+
+section#part-1 div.news
+{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#part-1 div.news div.news-ct
+{
+    position: relative;
+}
+
+section#part-1 div.news div.news-ct img
+{
+    max-width: 100%;
+    max-height: 75vh;
+}
+section#part-1 div.news div.news-ct div.content
+{
+    position: absolute;
+    width: 88%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    overflow-x: hidden;
+}
+
+section#part-1 div.news div.news-ct div.content h2 {
+    white-space: pre-line;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffff;
+    margin: 0;
+    font-size: 2rem;
+}
+section#part-1 div.news div.news-ct div.content div.articles
+{
+    width: 100%;
+    height: 83%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+}
+section#part-1 div.news div.news-ct div.content div.article
+{
+    width: 80%;
+    border-bottom: 2px solid #0d8774;
+    border-radius: 1px;
+    margin-top: 25px;
+}
+section#part-1 div.news div.news-ct div.content div.article h3
+{
+    white-space: pre-line;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #f89e41;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section#part-1 div.news div.news-ct div.content div.article p
+{
+    white-space: pre-line;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: .8rem;
+}
+section#part-1 div.news div.news-ct div.content div.article img
+{
+    width: 36%;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+section#part-1 div.news div.news-ct div.content div.articles::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+section#part-1 div.news div.news-ct div.content div.articles::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+section#part-1 div.news div.news-ct div.content div.articles::-webkit-scrollbar-thumb {
+  background: #f89e41;
+  border-radius: 10px;
+}
+
+@media (max-width: 1400px) {
+    section#part-1 div.message
+    {
+        width: 60%;
+    }
+    section#part-1 div.news
+    {
+        margin-left: 5%;
+        width: 35%;
+    }
+}
+
+@media (max-width: 991px) {
+    section#part-1
+    {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section#part-1 div.message
+    {
+        width: 100%;
+    }
+    section#part-1 div.news
+    {
+        margin-top: 100px;
+        width: 100%;
+    }
 }

@@ -10,7 +10,7 @@
     <hr class="solid">
     <h1>Bienvenue sur le panneau d'administration</h1>
     <hr class="solid">
-    <form method="POST" action="{{ route('category.store')}}"  enctype="multipart/form-data">
+    <form method="POST" action="{{ route('category.store')}}" enctype="multipart/form-data">
         @csrf
         @if ($errors->any())
             <div class="alert alert-danger">

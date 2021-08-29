@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Image;
+use App\Models\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -31,7 +32,8 @@ class AdminController extends Controller
     public function news()
     {
         if (Session::get('admin') != null) {
-            return view('admin.news');
+            $news = News::all();
+            return view('admin.news', compact('news'));
         } else return redirect()->route('admin.login');
     }
 

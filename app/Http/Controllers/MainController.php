@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -14,7 +15,8 @@ class MainController extends Controller
 
     public function infos()
     {
-        return view('infos');
+        $news = News::all();
+        return view('infos', compact('news'));
     }
 
     public function legal()
