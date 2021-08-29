@@ -281,6 +281,51 @@ section#part-1 div.news div.news-ct div.content div.articles::-webkit-scrollbar-
     section#part-1 div.news
     {
         margin-top: 100px;
+        padding-bottom: 100px;
         width: 100%;
+    }
+    section#part-1 div.message form div.chatbox-ct img.chatbox
+    {
+        width: 100%;
+        margin: 0;
+    }
+    section#part-1 div.message form img.chat{display: none;}
+    section#part-1 div.message form div.email
+    {
+        width: 77%;
+        margin-left: 0;
+        padding: 15px 15px;
+    }
+    section#part-1 div.message form div.email img{display: none;}
+    section#part-1 div.message form div.email input
+    {
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        background-color: #1f6258;
+        color: #ffff;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0 15px;
+        width: 50%;
+        font-size: .7rem;
+    }
+    section#part-1 div.message form div.email button
+    {
+        height: 40px;
+        width: 30%;
+        font-size: .6rem;
+    }
+    section#part-1 div.message form div.chatbox-ct textarea
+    {
+        position: absolute;
+        height: 65%;
+        width: 70%;
+        top: 25%;
+        left: 10%;
+        background: transparent;
+        border: none;
+        color: #ffff;
+        font-size: .8rem;
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
