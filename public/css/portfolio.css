@@ -241,11 +241,6 @@ section#part-2 div.flex div.box-images img:hover {
     section#part-2 div.flex div.box-images {
         width: calc(100% - 50px);
     }
-    section#part-2 div.flex nav div {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
     section#part-2 div.flex nav div a {
         margin: 0 10px;
     }
@@ -262,7 +257,6 @@ section#part-2 div.box {
     padding: 20px 25px;
     transition: .3s all;
 }
-
 section#part-2 div.purple {
     border-top: 4px solid #772d90;
     animation: opacity .3s ease-in-out;
