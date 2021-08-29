@@ -31,7 +31,7 @@ class AdminController extends Controller
     public function news()
     {
         if (Session::get('admin') != null) {
-            return view('admin.index');
+            return view('admin.news');
         } else return redirect()->route('admin.login');
     }
 
