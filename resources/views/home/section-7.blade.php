@@ -26,7 +26,7 @@
                 </h4>
                 <p>Optez pour un service client optimale et qualitatif afin de réaliser au mieux vos demandes.</p>
                 <img class="star" src="{{ asset('img/home/part-7/star_green.svg')}}" alt="Star">
-                <a href="#">Découvrir <span>portfolio</span></a>
+                <a href="{{route('portfolio', 0)}}">Découvrir <span>portfolio</span></a>
             </div>
             <div class="p7-line-box line-purple">
                 <img src="img/logo.png" alt="Logo">
@@ -35,7 +35,7 @@
                 </h4>
                 <p>Optez pour le meilleur rapport qualité prix avec un compromis parfait pour développer votre image.</p>
                 <img class="star" src="{{ asset('img/home/part-7/star_purple.svg')}}" alt="Star">
-                <a href="#">Découvrir <span>portfolio</span></a>
+                <a href="{{route('portfolio', 1)}}">Découvrir <span>portfolio</span></a>
             </div>
             <div class="p7-line-box line-yellow">
                 <img src="img/logo.png" alt="Logo">
