@@ -24,7 +24,7 @@
                 <h4>District
                 <span>Games</span>
                 </h4>
-                <p>Optez pour un service client optimale et qualitatif afin de réaliser au mieux vos demandes.</p>
+                <p>Optez pour un service client optimal et qualitatif afin de réaliser au mieux vos demandes.</p>
                 <img class="star" src="{{ asset('img/home/part-7/star_green.svg')}}" alt="Star">
                 <a href="{{route('portfolio', 0)}}">Découvrir <span>portfolio</span></a>
             </div>
@@ -33,7 +33,7 @@
                 <h4>District
                 <span>Light</span>
                 </h4>
-                <p>Optez pour le meilleur rapport qualité prix avec un compromis parfait pour développer votre image.</p>
+                <p>Optez pour le meilleur rapport qualité-prix avec un compromis parfait pour développer votre image.</p>
                 <img class="star" src="{{ asset('img/home/part-7/star_purple.svg')}}" alt="Star">
                 <a href="{{route('portfolio', 1)}}">Découvrir <span>portfolio</span></a>
             </div>
@@ -42,7 +42,7 @@
                 <h4>District
                 <span>Agency</span>
                 </h4>
-                <p>Découvrez notre agence de communication, dévellopez votre identité visuel à travers nos créations.</p>
+                <p>Découvrez notre agence de communication, dévellopez votre identité visuelle à travers nos créations.</p>
                 <img class="star" src="{{ asset('img/home/part-7/star_yellow.svg')}}" alt="Star">
                 <a href="javascript:void(0);">Prochainement <img src="{{ asset('img/home/part-7/lock.svg')}}" alt="Lock"></a>
             </div>

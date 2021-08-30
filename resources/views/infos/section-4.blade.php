@@ -16,8 +16,8 @@
         </div>
         <div class="p7-hint-box">
             <img src="{{ asset('img/infos/time.png')}}" alt="Palette">
-            <h3><span>délais</span> de réalisation</h3>
-            <p>Définissons un délais de réalisation. Si celui-ci est dépassé nous retirons 5% du montant par jours de retard.</p>
+            <h3><span>délai</span> de réalisation</h3>
+            <p>Définissons un délais de réalisation. Si celui-ci est dépassé nous retirons 5% du montant par jour de retard.</p>
         </div>
     </div>
     <div class="discord">

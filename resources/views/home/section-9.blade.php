@@ -25,7 +25,7 @@
                 <img class="profil" src="{{asset('img/home/part-9/profils/3.jpg')}}" alt="Photo de profil">
                 <div class="review">
                     <h4>SkillPVP</h4>
-                    <span>200K Players</span>
+                    <span>1,7K Players</span>
                     <p>Très bon travail. Nous travaillons avec DistrictGames depuis plusieurs années. Je recommande.</p>
                 </div>
             </div>

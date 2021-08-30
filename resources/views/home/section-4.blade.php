@@ -53,7 +53,7 @@
             </div>
             <div class="box">
                 <img class="icon" src="{{ asset('img/home/part-4/carousel/12.jpg')}}" alt="">
-                <p><span>+2500</span> Players</p>
+                <p><span>+400</span> Players</p>
             </div>
         </div>
     </div>
