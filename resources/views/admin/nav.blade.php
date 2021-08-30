@@ -18,6 +18,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('admin.news') }}">News</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('admin.tarifs') }}">Tarifs</a>
+            </li>
         </ul>
     </div>
 </nav>

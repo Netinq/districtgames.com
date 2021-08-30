@@ -5,8 +5,8 @@
             <div class="txt">
                 <h3>Fiches <span>tarifaires</span></h3>
                 <p>Téléchargez le .pdf pour visualiser nos fiches tarifaires.</p>
-                <a href="{{ asset('upload/FichePrix_DistricGames.pdf')}}" download><img src="{{ asset('img/home/part-8/download_districtgames.png')}}" alt="Download button"></a>
-                <a href="{{ asset('upload/FichePrix_DistricGames.pdf')}}" download><img src="{{ asset('img/home/part-8/download_districtlight.png')}}" alt="Download button"></a>
+                <a href="{{ isset($tarifs) ? $tarifs->url : '' }}" target="_blank"><img src="{{ asset('img/home/part-8/download_districtgames.png')}}" alt="Download button"></a>
+                <a href="{{ isset($tarifs) ? $tarifs->url2 : '' }}" target="_blank"><img src="{{ asset('img/home/part-8/download_districtlight.png')}}" alt="Download button"></a>
             </div>
         </div>
         <div id="joinus" class="box">

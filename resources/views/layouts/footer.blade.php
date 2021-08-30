@@ -10,8 +10,8 @@
     </div>
     <div class="box">
         <p class="title">portfolio</p>
-        <a href="DistrictGames">DistrictGames</a>
-        <a href="DistrictGames">DistrictLight</a>
+        <a href="{{route('portfolio', 0)}}">DistrictGames</a>
+        <a href="{{route('portfolio', 1)}}">DistrictLight</a>
     </div>
     <div class="box">
         <p class="title">pages légales</p>
@@ -21,8 +21,8 @@
     </div>
     <div class="box">
         <p class="title">tarifs</p>
-        <a href="{{ asset('upload/FichePrix_DistricGames.pdf')}}" download>Fiche DistrictGames</a>
-        <a href="{{ asset('upload/FichePrix_DistricGames.pdf')}}" download>Fiche DistrictLight</a>
+        <a href="{{ isset($tarifs) ? $tarifs->url : '' }}" target="_blank">Fiche DistrictGames</a>
+        <a href="{{ isset($tarifs) ? $tarifs->url2 : '' }}" target="_blank">Fiche DistrictLight</a>
     </div>
     <img class="back" src="{{asset('img/logo-purple.png')}}" alt="Purple logo">
 </footer>
