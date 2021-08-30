@@ -20,7 +20,7 @@ class MailController extends Controller
         'email'   =>   $request->email,
     );
 
-     Mail::to('pro@sarquentin.fr')->send(new SendMail($data));
+     Mail::to('districtcorp.private@gmail.com')->send(new SendMail($data));
      return back()->with('success', 'Thanks for contacting us!');
 
     }
