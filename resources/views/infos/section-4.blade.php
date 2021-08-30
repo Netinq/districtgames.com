@@ -30,5 +30,5 @@
             <p>DistrictLight<span>#0130</span></p>
         </div>
     </div>
-    <img id="bas" src="{{asset('img/infos/bas.png')}}" alt="">
+    {{-- <img id="bas" src="{{asset('img/infos/bas.png')}}" alt=""> --}}
 </section>

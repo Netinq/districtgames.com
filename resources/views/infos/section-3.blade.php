@@ -1,5 +1,5 @@
 <section id="part-3">
-    <img class="croquis" src="{{asset('img/infos/croquis.png')}}" alt="Croquis">
+    <img class="croquis" src="{{asset('img/infos/croquis.jpg')}}" alt="Croquis">
     <div class="brown-box prepare">
         <h3><span>préparez</span> votre commande</h3>
         <p>Réfléchissez à vos besoin, rassemblez vos idées et venez nous proposez votre cahier des charges. Vous pouvez également nous proposer une ligne directrice afin d'y réfléchir ensemble.
