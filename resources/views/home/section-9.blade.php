@@ -4,7 +4,7 @@
         <div class="avis" id="avis">
             <div class="box">
                 <img class="background" src="{{ asset('img/home/part-9/avis_discord.png')}}" alt="Tableau de fond">
-                <img class="profil" src="{{asset('img/home/part-9/profils/1.png')}}" alt="Photo de profil">
+                <img class="profil" src="{{asset('img/home/part-9/profils/1.jpg')}}" alt="Photo de profil">
                 <div class="review">
                     <h4>Vanadia</h4>
                     <span>14K Players</span>
@@ -13,7 +13,7 @@
             </div>
             <div class="box">
                 <img class="background" src="{{ asset('img/home/part-9/avis_discord.png')}}" alt="Tableau de fond">
-                <img class="profil" src="{{asset('img/home/part-9/profils/2.png')}}" alt="Photo de profil">
+                <img class="profil" src="{{asset('img/home/part-9/profils/2.jpg')}}" alt="Photo de profil">
                 <div class="review">
                     <h4>SniiperRL</h4>
                     <span>400K Followers</span>
@@ -22,7 +22,7 @@
             </div>
             <div class="box">
                 <img class="background" src="{{ asset('img/home/part-9/avis_discord.png')}}" alt="Tableau de fond">
-                <img class="profil" src="{{asset('img/home/part-9/profils/3.png')}}" alt="Photo de profil">
+                <img class="profil" src="{{asset('img/home/part-9/profils/3.jpg')}}" alt="Photo de profil">
                 <div class="review">
                     <h4>SkillPVP</h4>
                     <span>200K Players</span>
@@ -31,7 +31,7 @@
             </div>
             <div class="box">
                 <img class="background" src="{{ asset('img/home/part-9/avis_discord.png')}}" alt="Tableau de fond">
-                <img class="profil" src="{{asset('img/home/part-9/profils/4.png')}}" alt="Photo de profil">
+                <img class="profil" src="{{asset('img/home/part-9/profils/4.jpg')}}" alt="Photo de profil">
                 <div class="review">
                     <h4>SkySwords</h4>
                     {{-- <span>200K Players</span> --}}
@@ -40,7 +40,7 @@
             </div>
             <div class="box">
                 <img class="background" src="{{ asset('img/home/part-9/avis_discord.png')}}" alt="Tableau de fond">
-                <img class="profil" src="{{asset('img/home/part-9/profils/5.png')}}" alt="Photo de profil">
+                <img class="profil" src="{{asset('img/home/part-9/profils/5.jpg')}}" alt="Photo de profil">
                 <div class="review">
                     <h4>Neodium</h4>
                     {{-- <span>200K Players</span> --}}
@@ -49,7 +49,7 @@
             </div>
             <div class="box">
                 <img class="background" src="{{ asset('img/home/part-9/avis_discord.png')}}" alt="Tableau de fond">
-                <img class="profil" src="{{asset('img/home/part-9/profils/6.png')}}" alt="Photo de profil">
+                <img class="profil" src="{{asset('img/home/part-9/profils/6.jpg')}}" alt="Photo de profil">
                 <div class="review">
                     <h4>AverFight</h4>
                     <span>4K Players</span>
@@ -58,5 +58,5 @@
             </div>
         </div>
     </div>
-    <img id="charater" src="{{asset('img/home/part-9/character.png')}}" alt="">
+    {{-- <img id="charater" src="{{asset('img/home/part-9/character.png')}}" alt=""> --}}
 </section>

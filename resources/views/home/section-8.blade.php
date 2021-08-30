@@ -10,9 +10,12 @@
             </div>
         </div>
         <div id="joinus" class="box">
-            <a href="https://twitter.com/District_Games" target="_blank"><img src="{{ asset('img/home/part-8/twitter.png')}}" alt="Twitter link"></a>
-            <a href="https://discord.gg/zPnzmq449d" target="_blank"><img src="{{ asset('img/home/part-8/discord.png')}}" alt="Discord link"></a>
-            <a href="https://www.instagram.com/districtgames.off/" target="_blank"><img src="{{ asset('img/home/part-8/instagram.png')}}" alt="Instagram link"></a>
+            <a href="https://twitter.com/District_Games" target="_blank">
+                <img src="{{ asset('img/home/part-8/twitter.png')}}" alt="Twitter link" loading="lazy"></a>
+            <a href="https://discord.gg/zPnzmq449d" target="_blank">
+                <img src="{{ asset('img/home/part-8/discord.png')}}" alt="Discord link" loading="lazy"></a>
+            <a href="https://www.instagram.com/districtgames.off/" target="_blank">
+                <img src="{{ asset('img/home/part-8/instagram.png')}}" alt="Instagram link" loading="lazy"></a>
         </div>
     </div>
 </section>

@@ -1,5 +1,5 @@
 <section id="part-1">
-    <img id="background" src="{{ asset('img/portfolio/background.png')}}" alt="Caverne rocheuse">
+    <img id="background" src="{{ asset('img/portfolio/background.jpg')}}" alt="Caverne rocheuse">
     <div class="flex">
         <img id="logo-m" src="{{ asset('img/logo-fluid.png')}}" alt="Logo">
         <h2>Choisissez votre
