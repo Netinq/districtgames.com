@@ -23,9 +23,9 @@
                 <h2>News</h2>
                 <div class="articles">
                     @foreach ($news as $article)
-                        <div class="article">
-                            <h3><img src="{{route('news.fetch_size', [$article->id, 75])}}" alt="">{{$article->title}}</h3>
-                            <p>{{$article->content}}</p>
+                        <div class="article" itemscope itemtype="https://schema.org/Article">
+                            <h3 itemprop="articleBody"><img src="{{route('news.fetch_size', [$article->id, 75])}}" alt=""><span  itemprop="name">{{$article->title}}</span></h3>
+                            <p itemprop="articleBody">{{$article->content}}</p>
                         </div>
                     @endforeach
                 </div>

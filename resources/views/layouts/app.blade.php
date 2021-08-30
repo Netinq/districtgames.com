@@ -52,7 +52,7 @@
                 "@type": "Organization",
                 "name": "District Games",
                 "legalName": "District Games",
-                "description": "TODO",
+                "description": "Illustrez votre jeu, créez un univers à travers une nouvelle une charte graphique unique et moderne.",
                 "image": "https://districtgames.com/img/meta.jpg",
                 "logo": "https://districtgames.com/img/logo.png",
                 "url": "https://districtgames.com",

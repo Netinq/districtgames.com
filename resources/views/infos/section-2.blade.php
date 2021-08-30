@@ -1,5 +1,5 @@
 <section id="part-2">
-    <img class="trans" src="{{asset('img/infos/liaison.png')}}" alt="">
+    <img class="trans" src="{{asset('img/infos/liaison.png')}}" alt="Lianes">
     <div class="title">
         <h2>Comment
             <span>Commander ?</span>
@@ -48,7 +48,7 @@
             </div>
         </div>
     </div>
-    <img id="gauche" src="{{asset('img/infos/gauche.png')}}">
-    <img id="droite" src="{{asset('img/infos/droite.png')}}">
-    <img id="liane" src="{{asset('img/infos/liane_2.png')}}">
+    <img id="gauche" src="{{asset('img/infos/gauche.png')}}" alt="Rocher">
+    <img id="droite" src="{{asset('img/infos/droite.png')}}" alt="Rocher">
+    <img id="liane" src="{{asset('img/infos/liane_2.png')}}" alt="Liane">
 </section>
