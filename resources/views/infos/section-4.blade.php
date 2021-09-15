@@ -1,23 +1,23 @@
 <section id="part-4">
     <div class="brown-box pay">
-        <h3><span>paiement</span></h3>
-        <p>le règlement des commandes s'éffectue en amont de la réalisation au propre de votre commande. Nous acceptons les paiements par facturation PayPal et virement bancaire.</p>
+        <h3><span>@lang('infos.payment')</span></h3>
+        <p>@lang('infos.paytxt')</p>
     </div>
     <div class="p7-sub flex-h">
         <div class="p7-hint-box">
             <img src="{{ asset('img/infos/talk.png')}}" alt="Storm">
-            <h3><span>Discutons</span> du projet</h3>
-            <p>Discutez avec nous afin de cibler au mieux votre demande.</p>
+            <h3>@lang('infos.talk')</h3>
+            <p>@lang('infos.talktxt')</p>
         </div>
         <div class="p7-hint-box">
             <img src="{{ asset('img/infos/idea.png')}}" alt="Chat">
-            <h3><span>planification</span> de la demande</h3>
-            <p>Organisons le déroulement du projet ainsi que des possibilités de réalisations.</p>
+            <h3>@lang('infos.plan')</h3>
+            <p>@lang('infos.plantxt')</p>
         </div>
         <div class="p7-hint-box">
             <img src="{{ asset('img/infos/time.png')}}" alt="Palette">
-            <h3><span>délai</span> de réalisation</h3>
-            <p>Définissons un délais de réalisation. Si celui-ci est dépassé nous retirons 5% du montant par jour de retard.</p>
+            <h3>@lang('infos.time')</h3>
+            <p>@lang('infos.timetxt')</p>
         </div>
     </div>
     <div class="discord">

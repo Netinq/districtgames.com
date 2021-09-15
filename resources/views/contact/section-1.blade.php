@@ -1,7 +1,6 @@
 <section id="part-1">
     <div class="title">
-        <h2>nous <span>contacter</span>
-        </h2>
+        <h2>@lang('home.contact')</h2>
     </div>
     <div class="pan">
         <img class="stick" src="{{asset('img/contact/stick.png')}}" alt="">

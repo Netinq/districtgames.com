@@ -1,7 +1,7 @@
 <section id="part-1">
     <img id="logo-m" src="{{ asset('img/logo-fluid.png')}}" alt="Logo">
     <div class="message">
-        <h2>Envoyez-nous un <span>message</span></h2>
+        <h2>@lang('infos.msg')</h2>
         <form action="{{route('sendmail')}}" method="POST">
             @csrf
             <div class="chatbox-ct">
@@ -12,7 +12,7 @@
             <div class="email">
                 <img src="{{ asset('img/infos/mail.png')}}" alt="">
                 <input type="email" class="form-control" name="email" placeholder="exemple@email.com" required/>
-                <button type="submit">Envoyer</button>
+                <button type="submit">@lang('infos.send')</button>
             </div>
         </form>
     </div>
