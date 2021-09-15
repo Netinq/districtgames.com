@@ -21,8 +21,8 @@
     </div>
     <div class="box">
         <p class="title">tarifs</p>
-        <a href="{{ isset($tarifs) ? $tarifs->url : '' }}" target="_blank">Fiche DistrictGames</a>
-        <a href="{{ isset($tarifs) ? $tarifs->url2 : '' }}" target="_blank">Fiche DistrictLight</a>
+        <a href="{{ isset($tarifs) ? App::getLocale() == 'fr' ? $tarifs->url : $tarifs->url3 : '' }}" target="_blank">Fiche DistrictGames</a>
+        <a href="{{ isset($tarifs) ? App::getLocale() == 'fr' ? $tarifs->url2 : $tarifs->url4 : '' }}" target="_blank">Fiche DistrictLight</a>
     </div>
     <img class="back" src="{{asset('img/logo-purple.png')}}" alt="Purple logo">
 </footer>

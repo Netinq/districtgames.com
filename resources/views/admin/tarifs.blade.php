@@ -27,8 +27,16 @@
             <input type="url" name="url" class="form-control" id="url" value="{{ isset($tarifs) ? $tarifs->url : '' }}">
         </div>
         <div class="form-group">
+            <label for="url3">DistrictGames ANGLAIS</label>
+            <input type="url" name="url3" class="form-control" id="url3" value="{{ isset($tarifs) ? $tarifs->url3 : '' }}">
+        </div>
+        <div class="form-group">
             <label for="url2">DistrictLight</label>
             <input type="url" name="url2" class="form-control" id="url2" value="{{ isset($tarifs) ? $tarifs->url2 : '' }}">
+        </div>
+        <div class="form-group">
+            <label for="url4">DistrictLight ANGLAIS</label>
+            <input type="url" name="url4" class="form-control" id="url4" value="{{ isset($tarifs) ? $tarifs->url4 : '' }}">
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-info">Modifier</button>

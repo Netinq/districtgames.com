@@ -5,8 +5,10 @@
             <div class="txt">
                 <h3>@lang('home.price')</h3>
                 <p>@lang('home.download')</p>
-                <a href="{{ isset($tarifs) ? $tarifs->url : '' }}" target="_blank"><img src="{{ asset('img/home/part-8/download_districtgames.png')}}" alt="Download button"></a>
-                <a href="{{ isset($tarifs) ? $tarifs->url2 : '' }}" target="_blank"><img src="{{ asset('img/home/part-8/download_districtlight.png')}}" alt="Download button"></a>
+                <a href="{{ isset($tarifs) ? App::getLocale() == 'fr' ? $tarifs->url : $tarifs->url3 : '' }}"
+                    target="_blank"><img src="{{ asset('img/home/part-8/download_districtgames.png')}}" alt="Download button"></a>
+                <a href="{{ isset($tarifs) ? App::getLocale() == 'fr' ? $tarifs->url2 : $tarifs->url4 : '' }}"
+                    target="_blank"><img src="{{ asset('img/home/part-8/download_districtlight.png')}}" alt="Download button"></a>
             </div>
         </div>
         <div id="joinus" class="box">

@@ -12,12 +12,16 @@ class TarifController extends Controller
         $this->validate($request, [
             'url' => 'required|url',
             'url2' => 'required|url',
+            'url3' => 'required|url',
+            'url4' => 'required|url',
         ]);
 
         $tarif = Tarif::first();
         if ($tarif == null) $tarif = new Tarif();
         $tarif->url = request('url');
         $tarif->url2 = request('url2');
+        $tarif->url3 = request('url3');
+        $tarif->url4 = request('url4');
         $tarif->save();
 
         return redirect()->back()->with(['message' => 'URL modifié avec succès !']);
