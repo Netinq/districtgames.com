@@ -13,8 +13,20 @@
         <div id="price" class="box">
             <h3>@lang('home.price')</h3>
             <p>@lang('home.download')</p>
-            <a href="{{ isset($tarifs) ? App::getLocale() == 'fr' ? $tarifs->url : $tarifs->url3 : '' }}" target="_blank"><img src="{{ asset('img/home/part-8/download_districtgames.png')}}" alt="Download button"></a>
-            <a href="{{ isset($tarifs) ? App::getLocale() == 'fr' ? $tarifs->url2 : $tarifs->url4 : '' }}" target="_blank"><img src="{{ asset('img/home/part-8/download_districtlight.png')}}" alt="Download button"></a>
+            <a href="{{ isset($tarifs) ? App::getLocale() == 'fr' ? $tarifs->url : $tarifs->url3 : '' }}" target="_blank">
+                @if (App::getLocale() == 'fr')
+                <img src="{{ asset('img/home/part-8/download_districtgames.png')}}" alt="Download button">
+                @else
+                <img src="{{ asset('img/home/part-8/download_districtgames_en.png')}}" alt="Download button">
+                @endif
+            </a>
+            <a href="{{ isset($tarifs) ? App::getLocale() == 'fr' ? $tarifs->url2 : $tarifs->url4 : '' }}" target="_blank">
+                @if (App::getLocale() == 'fr')
+                <img src="{{ asset('img/home/part-8/download_districtlight.png')}}" alt="Download button">
+                @else
+                <img src="{{ asset('img/home/part-8/download_districtlight_en.png')}}" alt="Download button">
+                @endif
+            </a>
         </div>
     </div>
     <div class="presta">
