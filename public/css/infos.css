@@ -996,6 +996,10 @@ section#part-4
         padding-top: 150px;
         padding-bottom: 300px;
     }
+    div.brown-box p
+    {
+        font-size:.9rem;
+    }
 }
 
 section#part-4 div.pay{width: 50%;}
