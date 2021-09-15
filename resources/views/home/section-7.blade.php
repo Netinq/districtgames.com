@@ -1,21 +1,23 @@
 <section id="part-7">
     <div class="content">
-        <img id="p7-title" src="{{ asset('img/home/part-7/title.png')}}" alt="Nos services">
+        <img id="p7-title"
+        src="{{ App::getLocale() != 'fr' ? asset('img/home/part-7/title_en.png') : asset('img/home/part-7/title.png')}}"
+        alt="Nos services">
         <div class="p7-sub flex-h">
             <div class="p7-hint-box">
                 <img src="{{ asset('img/home/part-7/storm_icon.svg')}}" alt="Storm">
-                <h3>Réalisation <span>rapides</span></h3>
-                <p>Nous vous communiquons un délais et si celui ci n'est pas respecté nous retirons 5% par jour de retard.</p>
+                <h3>@lang('home.realization')</h3>
+                <p>@lang('home.realizationtxt')</p>
             </div>
             <div class="p7-hint-box">
                 <img src="{{ asset('img/home/part-7/chat_icon.svg')}}" alt="Chat">
-                <h3>à <span>l'écoute</span></h3>
-                <p>Nous vous répondons au minimum de 9h à 18h du Lundi au Vendredi.</p>
+                <h3>@lang('home.listening')</h3>
+                <p>@lang('home.listeningtxt')</p>
             </div>
             <div class="p7-hint-box">
                 <img src="{{ asset('img/home/part-7/palette_icon.svg')}}" alt="Palette">
-                <h3><span>Adapté</span> à tous</h3>
-                <p>Nous vous proposons 2 formats de réalisation nos différentes gammes.</p>
+                <h3>@lang('home.adapted')</h3>
+                <p>@lang('home.adaptedtxt')</p>
             </div>
         </div>
         <div class="p7-sub flex-v">

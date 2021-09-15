@@ -11,8 +11,8 @@
             <a class="button" href="{{ route('portfolio')}}">portfolio</a>
         </div>
         <div class="title">
-            <h1><span>Bienvenue</span>
-                sur districtgames</h1>
+            <h1><span>{{ __('home.welcome') }}</span>
+                {{ __('home.in') }}</h1>
         </div>
     </div>
 </section>

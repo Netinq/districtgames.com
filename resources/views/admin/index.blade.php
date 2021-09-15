@@ -45,7 +45,7 @@
         <h2>Ajouter une image</h2>
         <div class="form-group">
             <label for="title">Titre de l'image</label>
-            <input type="text" name="title" class="form-control" id="title" placeholder="Titre de l'image">
+            <input type="text" name="title" class="form-control" id="title" placeholder="Titre de l'image" value="test">
         </div>
         <div class="form-group">
             <label for="portfolio">Portfolio</label>

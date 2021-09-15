@@ -492,6 +492,10 @@ section#part-4 div.title-ctn h3 {
     text-transform: uppercase;
     font-size: 2rem;
     white-space: pre-line;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     animation: translate-bottom 1s;
 }

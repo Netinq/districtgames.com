@@ -22,3 +22,37 @@ function change(new_color)
         });
     }
 }
+
+const margin = 10;
+
+window.addEventListener('load', () => {
+
+    const images = document.getElementsByClassName('image');
+    const array = Array.from(images);
+    const max_width = document.getElementById('box-images').offsetWidth;
+    for (let index = 0; index < array.length; index++) {
+        array[index].parentElement.style.order = index;
+    }
+    fill(array, 0, max_width);
+});
+
+function fill(array, index, max_width, lines)
+{
+    if (index == array.length - 1) return;
+    const image = array[index];
+    const next_image = array[index + 1];
+    const width = image.offsetWidth + margin;
+    const next_width = next_image.offsetWidth + margin;
+    const line = [];
+    if (width + next_width > max_width)
+    {
+
+    }
+}
+
+function lineWidth(line)
+{
+    let width = 0;
+    for (let index = 0; index < line.length; index++) width += (line[index].offsetWidth + margin);
+    return width;
+}

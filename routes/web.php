@@ -4,7 +4,10 @@ use App\Http\Controllers\ImageController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ImageNewsController;
+use App\Http\Controllers\LocalizationController;
 use App\Http\Controllers\MailController;
+use App\Http\Middleware\Localization;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ MainController::class, 'home'])->name('home');
@@ -29,3 +32,5 @@ Route::get('/image/fetch_size/{id}/{size}', [ImageController::class, 'fetch_size
 Route::get('/news/fetch/{id}', [ImageNewsController::class, 'fetch'])->name('news.fetch');
 Route::get('/news/fetch_little/{id}', [ImageNewsController::class, 'fetch_little'])->name('news.fetch_little');
 Route::get('/news/fetch_size/{id}/{size}', [ImageNewsController::class, 'fetch_size'])->name('news.fetch_size');
+
+Route::get('/lang/{locale}', [LocalizationController::class, 'index']);

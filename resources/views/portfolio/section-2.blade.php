@@ -13,10 +13,10 @@
                 @endforeach
             </div>
         </nav>
-        <div class="box box-images {{ $portfolio == 0 ? 'green' : 'purple' }}">
+        <div id="box-images" class="box box-images {{ $portfolio == 0 ? 'green' : 'purple' }}">
             @foreach ($images as $img)
             <a href="{{ route('image.fetch', $img->id)}}" target="_blank">
-                <img src="{{ route('image.fetch_little', $img->id)}}" alt="">
+                <img class="image" src="{{ route('image.fetch_little', $img->id)}}" alt="">
             </a>
             @endforeach
         </div>
