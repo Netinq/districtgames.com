@@ -22,3 +22,13 @@
         <img class="mobile close" src="{{asset('svg/close.svg')}}" alt="">
     </button>
 </nav>
+
+<a id="lang" class="{{ Route::is('portfolio') ? 'blue' : '' }}{{ Route::is('contact') ? 'brown' : '' }}" href="{{ App::getLocale() == 'fr' ? route('lang', 'en') : route('lang', 'fr')}}">
+    @if (App::getLocale() != 'fr')
+    <img src="{{ asset('img/FR.png')}}" alt="Download button">
+    <span>traduire</span>
+    @else
+    <img src="{{ asset('img/EN.png')}}" alt="Download button">
+    <span>translate</span>
+    @endif
+</a>

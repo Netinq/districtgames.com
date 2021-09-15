@@ -10,7 +10,7 @@ use App\Http\Middleware\Localization;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [ MainController::class, 'home'])->name('home');
+Route::get('/', [MainController::class, 'home'])->name('home');
 Route::get('/infos', [MainController::class, 'infos'])->name('infos');
 Route::get('/legal', [MainController::class, 'legal'])->name('legal');
 Route::get('/shop', [MainController::class, 'shop'])->name('shop');
@@ -33,4 +33,4 @@ Route::get('/news/fetch/{id}', [ImageNewsController::class, 'fetch'])->name('new
 Route::get('/news/fetch_little/{id}', [ImageNewsController::class, 'fetch_little'])->name('news.fetch_little');
 Route::get('/news/fetch_size/{id}/{size}', [ImageNewsController::class, 'fetch_size'])->name('news.fetch_size');
 
-Route::get('/lang/{locale}', [LocalizationController::class, 'index']);
+Route::get('/lang/{locale}', [LocalizationController::class, 'index'])->name('lang');
