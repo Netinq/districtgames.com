@@ -226,7 +226,7 @@ a#lang {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 1100;
     border-radius: 10px 0 0 10px;
 }
 
