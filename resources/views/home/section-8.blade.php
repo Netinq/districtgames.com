@@ -3,8 +3,8 @@
         <div id="price" class="box">
             <img src="{{ asset('img/home/part-8/price.png')}}" alt="Price's board" class="board">
             <div class="txt">
-                <h3>Fiches <span>tarifaires</span></h3>
-                <p>Téléchargez le .pdf pour visualiser nos fiches tarifaires.</p>
+                <h3>@lang('home.price')</h3>
+                <p>@lang('home.download')</p>
                 <a href="{{ isset($tarifs) ? $tarifs->url : '' }}" target="_blank"><img src="{{ asset('img/home/part-8/download_districtgames.png')}}" alt="Download button"></a>
                 <a href="{{ isset($tarifs) ? $tarifs->url2 : '' }}" target="_blank"><img src="{{ asset('img/home/part-8/download_districtlight.png')}}" alt="Download button"></a>
             </div>

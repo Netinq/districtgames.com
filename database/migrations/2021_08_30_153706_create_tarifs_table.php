@@ -12,6 +12,8 @@ class CreateTarifsTable extends Migration
             $table->id();
             $table->text('url');
             $table->text('url2');
+            $table->text('url3');
+            $table->text('url4');
             $table->timestamps();
         });
     }
