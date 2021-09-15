@@ -3,6 +3,7 @@
     'styles' => ['legal']
 ])
 
+@section('title', 'Mentions légales')
 @section('content')
 <section>
     <div>

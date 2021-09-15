@@ -3,6 +3,7 @@
     'styles' => ['shop']
 ])
 
+@section('title', 'Notre boutique arrive bientôt')
 @section('content')
 <section>
     <img class="icon" src="{{ asset('img/shop/amulette.png')}}" alt="">
