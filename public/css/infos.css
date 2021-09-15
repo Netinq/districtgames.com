@@ -741,11 +741,16 @@ section#part-2 div.tarif div#price h3 span {
 }
 
 section#part-2 div.tarif div#price a {
-    width: 75%;
+    width: 100%;
     margin-bottom: 25px;
     position: relative;
     transition: .3s all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 section#part-2 div.tarif div#price a:hover {
     transform: scale(1.1);
 }
@@ -754,9 +759,7 @@ section#part-2 div.tarif div#price a:active {
 }
 
 section#part-2 div.tarif div#price img {
-    width: 60%;
-    margin-left: 20%;
-    margin-bottom: 15px;
+    width: 75%;
 }
 
 section#part-2 div.tarif div#price p {
@@ -855,7 +858,7 @@ section#part-2 img#droite {
 }
 section#part-2 img#liane {
     position: absolute;
-    bottom: 0;
+    bottom: -10vh;
     right: 0;
     width: 100vw;
     z-index: 99;
