@@ -215,23 +215,17 @@ nav.mobile img.close {
 }
 
 a#lang {
-    height: 75px;
-    width: 75px;
-    background-color: #014649;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    right: 0;
-    top: calc(50vh - (75px / 2));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1100;
-    border-radius: 10px 0 0 10px;
 }
 
 a#lang img {
     height: 25px;
+    border-radius: 5px;
+    border: 2px solid #f8ac41;
 }
 a#lang span {
     color: #ffff;
@@ -241,6 +235,13 @@ a#lang span {
     text-transform: uppercase;
     margin: 0;
     margin-top: 5px;
+}
+
+@media (min-width: 992px) {
+    a#lang {
+        position: absolute;
+        right: 50px;
+    }
 }
 
 a#lang.blue {
