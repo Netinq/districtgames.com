@@ -26,27 +26,27 @@
                 <h4>District
                 <span>Games</span>
                 </h4>
-                <p>Optez pour un service client optimal et qualitatif afin de réaliser au mieux vos demandes.</p>
+                <p>@lang('home.games')</p>
                 <img class="star" src="{{ asset('img/home/part-7/star_green.svg')}}" alt="Star">
-                <a href="{{route('portfolio', 0)}}">Découvrir <span>portfolio</span></a>
+                <a href="{{route('portfolio', 0)}}">@lang('home.discover') <span>portfolio</span></a>
             </div>
             <div class="p7-line-box line-purple">
                 <img src="img/light.png" alt="Logo">
                 <h4>District
                 <span>Light</span>
                 </h4>
-                <p>Optez pour le meilleur rapport qualité-prix avec un compromis parfait pour développer votre image.</p>
+                <p>@lang('home.light')</p>
                 <img class="star" src="{{ asset('img/home/part-7/star_purple.svg')}}" alt="Star">
-                <a href="{{route('portfolio', 1)}}">Découvrir <span>portfolio</span></a>
+                <a href="{{route('portfolio', 1)}}">@lang('home.discover') <span>portfolio</span></a>
             </div>
             <div class="p7-line-box line-yellow">
                 <img src="img/agency.png" alt="Logo">
                 <h4>District
                 <span>Agency</span>
                 </h4>
-                <p>Découvrez notre agence de communication, dévellopez votre identité visuelle à travers nos créations.</p>
+                <p>@lang('home.agency')</p>
                 <img class="star" src="{{ asset('img/home/part-7/star_yellow.svg')}}" alt="Star">
-                <a href="javascript:void(0);">Prochainement <img src="{{ asset('img/home/part-7/lock.svg')}}" alt="Lock"></a>
+                <a href="javascript:void(0);">@lang('home.soon') <img src="{{ asset('img/home/part-7/lock.svg')}}" alt="Lock"></a>
             </div>
         </div>
     </div>

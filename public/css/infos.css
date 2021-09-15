@@ -795,6 +795,11 @@ section#part-2 div.tarif div#price p {
         margin: 0;
     }
 }
+@media (max-width: 991px) {
+    section#part-2 div.tarif div#price a {
+        width: 100%;
+    }
+}
 
 @media (max-width: 991px) {
     section#part-2 div.tarif
