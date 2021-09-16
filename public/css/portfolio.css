@@ -1,22 +1,36 @@
-section#part-1
-{
+section#part-1 {
     position: relative;
     height: 80vh;
     width: 100vw;
-    background-color: #0F0A2B;
+    background-color: #0f0a2b;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-@media (max-width: 1400px) {section#part-1 {height: 70vh;}}
-@media (max-width: 1200px) {section#part-1 {height: 60vh;}}
-@media (max-width: 991px) {section#part-1 {height: 50vh;}}
-@media (max-width: 767px) {section#part-1 {height: 40vh;}}
+@media (max-width: 1400px) {
+    section#part-1 {
+        height: 70vh;
+    }
+}
+@media (max-width: 1200px) {
+    section#part-1 {
+        height: 60vh;
+    }
+}
+@media (max-width: 991px) {
+    section#part-1 {
+        height: 50vh;
+    }
+}
+@media (max-width: 767px) {
+    section#part-1 {
+        height: 40vh;
+    }
+}
 
-section#part-1 img#background
-{
+section#part-1 img#background {
     position: absolute;
     top: 150px;
     width: 100vw;
@@ -24,8 +38,7 @@ section#part-1 img#background
     z-index: 100;
 }
 
-section#part-1 div.flex
-{
+section#part-1 div.flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,29 +51,25 @@ section#part-1 div.flex
 }
 
 @media (max-width: 1200px) {
-    section#part-1 div.flex
-    {
+    section#part-1 div.flex {
         height: 100%;
         width: calc(100vw - 200px);
     }
 }
 
 @media (max-width: 767px) {
-    section#part-1 div.flex
-    {
+    section#part-1 div.flex {
         margin-top: 25px;
         width: calc(100vw - 100px);
         padding: 0 50px;
     }
 }
-section#part-1 div.flex img#logo-m
-{
+section#part-1 div.flex img#logo-m {
     display: none;
 }
 
 @media (max-width: 991px) {
-    section#part-1 div.flex img#logo-m
-    {
+    section#part-1 div.flex img#logo-m {
         display: block;
         height: 75px;
         align-self: center;
@@ -81,21 +90,33 @@ section#part-1 div.flex h2 {
 }
 
 section#part-1 div.flex h2 span {
-    color: #F8AC41;
+    color: #f8ac41;
     font-size: 3rem;
 }
 
 @media (max-width: 1400px) {
-    section#part-1 div.flex h2 {font-size: 1.6rem;}
-    section#part-1 div.flex h2 span {font-size: 2.4rem;}
+    section#part-1 div.flex h2 {
+        font-size: 1.6rem;
+    }
+    section#part-1 div.flex h2 span {
+        font-size: 2.4rem;
+    }
 }
 @media (max-width: 991px) {
-    section#part-1 div.flex h2 {font-size: 1rem;}
-    section#part-1 div.flex h2 span {font-size: 1.6rem;}
+    section#part-1 div.flex h2 {
+        font-size: 1rem;
+    }
+    section#part-1 div.flex h2 span {
+        font-size: 1.6rem;
+    }
 }
 @media (max-width: 991px) {
-    section#part-1 div.flex h2 {font-size: .8rem;}
-    section#part-1 div.flex h2 span {font-size: 1rem;}
+    section#part-1 div.flex h2 {
+        font-size: 0.8rem;
+    }
+    section#part-1 div.flex h2 span {
+        font-size: 1rem;
+    }
 }
 
 section#part-1 div.flex div.choose {
@@ -111,23 +132,40 @@ section#part-1 div.flex div.choose a {
     background: none;
     margin: 0 25px;
     cursor: pointer;
-    transition: .3s all;
+    transition: 0.3s all;
 }
-section#part-1 div.flex div.choose a:hover {transform: scale(1.1);}
-section#part-1 div.flex div.choose a:active {transform: scale(.9);}
-section#part-1 div.flex div.choose a img {height: 200px;}
-@media (max-width: 1200px) {section#part-1 div.flex div.choose a img {height: 150px;}}
-@media (max-width: 991px) {section#part-1 div.flex div.choose a img {height: 100px;}}
-@media (max-width: 991px) {section#part-1 div.flex div.choose a {padding: 0 10px;}}
+section#part-1 div.flex div.choose a:hover {
+    transform: scale(1.1);
+}
+section#part-1 div.flex div.choose a:active {
+    transform: scale(0.9);
+}
+section#part-1 div.flex div.choose a img {
+    height: 200px;
+}
+@media (max-width: 1200px) {
+    section#part-1 div.flex div.choose a img {
+        height: 150px;
+    }
+}
+@media (max-width: 991px) {
+    section#part-1 div.flex div.choose a img {
+        height: 100px;
+    }
+}
+@media (max-width: 991px) {
+    section#part-1 div.flex div.choose a {
+        padding: 0 10px;
+    }
+}
 
-section#part-2
-{
+section#part-2 {
     position: relative;
     min-height: 100vh;
     width: 100vw;
-    background-color: #434F66;
-    background: #434F66;
-    background: linear-gradient(180deg, #434F66 25%, #191B3E 100%);
+    background-color: #434f66;
+    background: #434f66;
+    background: linear-gradient(180deg, #434f66 25%, #191b3e 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -135,8 +173,7 @@ section#part-2
     overflow-x: hidden;
 }
 
-section#part-2 div.flex
-{
+section#part-2 div.flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -148,21 +185,35 @@ section#part-2 div.flex
     padding-top: 40vh;
     position: relative;
 }
-@media (max-width: 1400px) {section#part-2 div.flex {padding-top: 20vh;}}
-@media (max-width: 1200px) {section#part-2 div.flex {padding-top: 20vh;}}
-@media (max-width: 767px) {section#part-2 div.flex {padding-top: 17vh;}}
+@media (max-width: 1400px) {
+    section#part-2 div.flex {
+        padding-top: 20vh;
+    }
+}
+@media (max-width: 1200px) {
+    section#part-2 div.flex {
+        padding-top: 20vh;
+    }
+}
+@media (max-width: 767px) {
+    section#part-2 div.flex {
+        padding-top: 17vh;
+    }
+}
 
-@media (max-width: 1200px) {section#part-2 div.flex{width: calc(100vw - 200px);}}
+@media (max-width: 1200px) {
+    section#part-2 div.flex {
+        width: calc(100vw - 200px);
+    }
+}
 @media (max-width: 991px) {
-    section#part-2 div.flex
-    {
+    section#part-2 div.flex {
         flex-direction: column;
     }
 }
 
 @media (max-width: 767px) {
-    section#part-2 div.flex
-    {
+    section#part-2 div.flex {
         width: calc(100vw - 100px);
     }
 }
@@ -202,11 +253,13 @@ section#part-2 div.flex nav a {
     background: none;
     border-radius: 10px;
     padding: 15px 15px;
-    transition: .3s all;
+    transition: 0.3s all;
     cursor: pointer;
     text-decoration: none;
 }
-section#part-2 div.flex nav a:hover {background-color: #191B3E;}
+section#part-2 div.flex nav a:hover {
+    background-color: #191b3e;
+}
 
 section#part-2 div.flex div.box-images {
     width: calc(70vw - 200px);
@@ -222,7 +275,8 @@ section#part-2 div.flex div.box-images img {
     border-radius: 10px;
     cursor: pointer;
     margin: 5px;
-    transition: .3s all;
+    height: 200px;
+    transition: 0.3s all;
     position: relative;
 }
 
@@ -231,7 +285,7 @@ section#part-2 div.flex div.box-images img:hover {
     z-index: 100;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     section#part-2 div.flex nav {
         width: 100%;
     }
@@ -255,21 +309,25 @@ section#part-2 div.box {
     border-top: 4px solid #0d8774;
     border-radius: 15px;
     padding: 20px 25px;
-    transition: .3s all;
+    transition: 0.3s all;
 }
 section#part-2 div.purple {
     border-top: 4px solid #772d90;
-    animation: opacity .3s ease-in-out;
+    animation: opacity 0.3s ease-in-out;
 }
 
 section#part-2 div.green {
     border-top: 4px solid #0d8774;
-    animation: opacity .3s ease-in-out;
+    animation: opacity 0.3s ease-in-out;
 }
 
 @keyframes opacity {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 section#part-2 div.flex nav .green a.active {

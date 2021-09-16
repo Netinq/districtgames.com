@@ -8,9 +8,9 @@
     </nav>
     <a id="lang" class="{{ Route::is('portfolio') ? 'blue' : '' }}{{ Route::is('contact') ? 'brown' : '' }}" href="{{ App::getLocale() == 'fr' ? route('lang', 'en') : route('lang', 'fr')}}">
 @if (App::getLocale() != 'fr')
-<img src="{{ asset('img/FR.png')}}" alt="Download button">
+<img src="{{ asset('img/FR_2.png')}}" alt="Download button">
 @else
-<img src="{{ asset('img/EN.png')}}" alt="Download button">
+<img src="{{ asset('img/ENG_2.png')}}" alt="Download button">
 @endif
 </a>
     {{-- <img class="mobile logo" src="{{ asset('img/logo-fluid.png')}}" alt="Logo"> --}}
@@ -27,9 +27,9 @@
     <a href="{{ route('infos')}}">infos</a>
     <a id="lang" class="{{ Route::is('portfolio') ? 'blue' : '' }}{{ Route::is('contact') ? 'brown' : '' }}" href="{{ App::getLocale() == 'fr' ? route('lang', 'en') : route('lang', 'fr')}}">
     @if (App::getLocale() != 'fr')
-    <img src="{{ asset('img/FR.png')}}" alt="Download button">
+    <img src="{{ asset('img/FR_2.png')}}" alt="Download button">
     @else
-    <img src="{{ asset('img/EN.png')}}" alt="Download button">
+    <img src="{{ asset('img/ENG_2.png')}}" alt="Download button">
     @endif
 </a>
     <button onclick="showMobile();" class="mobile">

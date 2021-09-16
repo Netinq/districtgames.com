@@ -24,7 +24,7 @@ class ImageNewsController extends Controller
     {
         $news = News::where('id', $id)->first();
         $image_file = Image::make($news->image);
-        $image_file->resize(null, 200, function ($constraint) {
+        $image_file->resize(null, 150, function ($constraint) {
             $constraint->aspectRatio();
         });
         $response = Response::make($image_file->encode('png'));

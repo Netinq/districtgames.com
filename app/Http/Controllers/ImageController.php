@@ -14,8 +14,8 @@ class ImageController extends Controller
     {
         $image = ModelsImage::where('id', $id)->first();
         $image_file = Image::make($image->image);
-        $response = Response::make($image_file->encode('png'));
-        $response->header('Content-Type', 'image/png');
+        $response = Response::make($image_file->encode('webp'));
+        $response->header('Content-Type', 'image/webp');
 
         return $response;
     }
@@ -27,8 +27,8 @@ class ImageController extends Controller
         $image_file->resize(null, 200, function ($constraint) {
             $constraint->aspectRatio();
         });
-        $response = Response::make($image_file->encode('png'));
-        $response->header('Content-Type', 'image/png');
+        $response = Response::make($image_file->encode('webp'));
+        $response->header('Content-Type', 'image/webp');
 
         return $response;
     }
@@ -40,8 +40,8 @@ class ImageController extends Controller
         $image_file->resize(null, $size, function ($constraint) {
             $constraint->aspectRatio();
         });
-        $response = Response::make($image_file->encode('png'));
-        $response->header('Content-Type', 'image/png');
+        $response = Response::make($image_file->encode('webp'));
+        $response->header('Content-Type', 'image/webp');
 
         return $response;
     }

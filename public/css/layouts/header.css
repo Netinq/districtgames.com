@@ -225,7 +225,7 @@ a#lang {
 a#lang img {
     height: 25px;
     border-radius: 5px;
-    border: 2px solid #f8ac41;
+    /* border: 2px solid #f8ac41; */
 }
 a#lang span {
     color: #ffff;
