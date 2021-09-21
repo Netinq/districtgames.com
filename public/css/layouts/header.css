@@ -38,7 +38,7 @@ header nav {
         display: none;
     }
     header .web {
-        display: none;
+        display: none !important;
     }
 }
 @media (min-width: 991px) {
