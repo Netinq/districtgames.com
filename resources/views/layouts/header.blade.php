@@ -6,7 +6,7 @@
         <a href="{{ route('shop')}}">@lang('header.shop')</a>
         <a href="{{ route('infos')}}">infos</a>
     </nav>
-    <a id="lang" class="{{ Route::is('portfolio') ? 'blue' : '' }}{{ Route::is('contact') ? 'brown' : '' }}" href="{{ App::getLocale() == 'fr' ? route('lang', 'en') : route('lang', 'fr')}}">
+    <a id="lang" class="web {{ Route::is('portfolio') ? 'blue' : '' }}{{ Route::is('contact') ? 'brown' : '' }}" href="{{ App::getLocale() == 'fr' ? route('lang', 'en') : route('lang', 'fr')}}">
 @if (App::getLocale() != 'fr')
 <img src="{{ asset('img/FR_2.png')}}" alt="Download button">
 @else
